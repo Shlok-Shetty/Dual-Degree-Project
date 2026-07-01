@@ -1,0 +1,1162 @@
+{"options": ["A", "B", "C", "D"], "utterance": "D outranks B here", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "each of these is a misfit", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "top three: B C D", "label": ["B", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "is there a tutorial", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A fits, B doesn't, C fits, D doesn't", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "on the fence tbh", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "D nudges past A", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "leg day tomorrow", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "not a single match", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "no on C, all others fine", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "prefer D over B", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "definitely not A or B", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is it", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "totally unclear", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A a keeper, B not, C not, D a keeper", "label": ["A", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is the only one that doesn't fit", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "clearly A", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "the rest are fine, just not D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "none belong here", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "im vetoing B", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "just remove B", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is impossible sorry", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "option A for sure", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "not confident enough to say", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "C surges past D", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "B and C stay on shortlist, C narrowly winning", "label": ["B", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is the winner between B and A", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "this UI is broken", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "these four options don't include what I want", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A more than C imo", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything but C is fine", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A on point, B off, C on point, D off", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "yes D", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "not one of these looks close", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "no clue", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A trumps B here", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "D off my list", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A off, B on point, C off, D on point", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "wrong: D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "D wins vs B", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four dud", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "these are all a blur to me", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "no on all of these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep A and C, both plausible, A better", "label": ["A", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "cross B and D off", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "is it raining out?", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "all but D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "my order still hasn't arrived", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is definitely more like it than A", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "clearly D", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "brb bathroom", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and D both no, B and C possible", "label": ["B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and C both no", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "id take B not A", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "sorry, none of them work for me", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A miss, B hit, C miss, D hit", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "i cant really tell", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A doesn't work, B works well, C doesn't, D works well", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is superior to C in every way", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "my back hurts from packing", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "B please", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep A and B in, B slightly ahead", "label": ["A", "B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only real problem is D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B and D both stay in, D a bit more", "label": ["B", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: no. B: no. Others could work", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B fits better than A", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "leaning A and C", "label": ["A", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "rule out A, C, and D", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is straightforward better than B", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is a better fit than B", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "these picks are all wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "picking A C and D", "label": ["A", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "leetcode problem is kicking my butt", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "I hate all four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is alright, D is the closest match though", "label": ["B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "I don't know", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate all four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "the whole thing's wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "not one is a match", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep C and D, C the leader", "label": ["C", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "cut A and C", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "none is the target", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "ehh A I guess", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A lame, B lame, C promising, D promising", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "id just be guessing", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "these 3 are wrong: A C D", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "D wins over C, no contest", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "drop A drop D", "label": ["B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "no clear preference", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "basically indistinguishable to me", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A tentative yes, B tentative no, C tentative yes, D tentative no", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "same-y", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A doesn't work for me, B works, C doesn't, D works", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is impossible", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "hmm hard call", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "😂", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "B leads over A", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep A and C both, C edging out", "label": ["A", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "C over A, easy call", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant commit either way", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "id take B, not A, id take D, not C", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "digging C and D", "label": ["C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A loses, B wins, C loses, D wins", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B rather than D", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: keep. B: pass. C: keep. D: pass.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "chennai is hot rn", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "these are all terrible", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "all wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A promising, B promising, C lame, D lame", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A red, B red, C green, D green", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "cut all except A", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "no across the board", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "throw out B and C", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "surely not A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A C D decent", "label": ["A", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "they all seem samey", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "how long does this take", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything shown misses", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant judge these", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "D unacceptable, others fine", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "any recommendations for shows", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "yeah on C and D", "label": ["C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A ugh, B nice, C nice, D ugh", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "pass on D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "hits: B, D. misses: A, C.", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "disqualify them all", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "?", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "hard to tell", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "just installed the update, its broken", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "they all look pretty close", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A no way", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A plausible, B implausible, C plausible, D implausible", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: OK-ish. B: no. C: OK-ish. D: no.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "dunno really", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A > D, obviously", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "difficult to say", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "idek", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and D look right", "label": ["A", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "the D one", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "not one of these is even in the right direction", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A? nah. others fine", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the odd one out is D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and D both potential, D more likely", "label": ["A", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and D both in, A having the edge", "label": ["A", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "D? nah, keep A B C", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "veto A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "shortlist: A B D", "label": ["A", "B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "D takes it over A", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "the whole thing is wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "I prefer C over D", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "C surpasses A here", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "these look pretty similar to me", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "thumbs down A, thumbs up B, thumbs up C, thumbs down D", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "windows update is running", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "my computer is so slow today", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "wrong, wrong, wrong, wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A solid, B weak, C solid, D weak", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A yeah, B nope, C yeah, D nope", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "C", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "C looks like the target", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A a match, B not really, C a match, D not really", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "yes B", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "avoid A, C, D", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "leave out A, C, D", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "junk, all of them", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything shown is a miss", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "not clear which is which", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A doesn't check out, B does, C doesn't, D does", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is closer than C, C isn't bad though, keep both", "label": ["A", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: no. B: OK-ish. C: no. D: OK-ish.", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "nothing works", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "C way ahead of B", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "*shrug*", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A fail, B fail, C pass, D pass", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "the good ones are A and B, the bad ones C and D", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and C off my list", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A yay, B nay, C nay, D yay", "label": ["A", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "the B choice is off", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "coin flip for me", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A not worth a look, B worth a look, C not, D worth a look", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "rule out C please", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "my code isn't compiling", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "not feeling any of them", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "phone almost dead", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "should i get lunch or skip it", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate all", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "throw all four out", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: nailed it. B: whiffed it. C: nailed it. D: whiffed it.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "picking A", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "anything but B", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A a match, B a match, C off, D off", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A above B by miles", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "playlist on shuffle rn", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "Optoin C looks fine", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "C wins vs D no debate", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "nope, none of these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "definitely not A or C", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is wrong, B is wrong, C is wrong", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "im rejecting all four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A pass, B pass, C fail, D fail", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A weak, B weak, C solid, D solid", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep B and D", "label": ["B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of these come close", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "B looks like the target", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A far, B close, C far, D close", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A ugh, B ugh, C nice, D nice", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "im inclined toward B, not D", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "train got cancelled", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "going to goa next month", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "nothing looks right", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "candidates: C and D", "label": ["C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A C and D all fit", "label": ["A", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "the B one is off", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are murky", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "unsure", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "id have to guess", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is my pick", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is decent, B is bad, C maybe, D no", "label": ["A", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "they all look about the same", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "I'd rank A then C, both fine", "label": ["A", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything but D is okay", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "tell me a joke", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "the shown options are all wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "who won the game last night", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "too close to call", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate all but C and D", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is a no go", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and D are good matches", "label": ["A", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A B C decent", "label": ["A", "B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep B and C in play, B leading", "label": ["B", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A not worth keeping, B worth keeping, C not, D worth keeping", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "C dominates D on all fronts", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "not a single one is right", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A stands out as wrong", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep both A and B, A slightly more likely", "label": ["A", "B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A unworthy, B worthy, C unworthy, D worthy", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "blanking on this", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "remove all except D", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "i can't call it", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "D no go", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant pick", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "same to me", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "zero good options", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of these work", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "please ignore A and D", "label": ["B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "top picks: A and D", "label": ["A", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can eliminate A quickly", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "im going with B and C", "label": ["B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "the C one", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "gotta be A", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "id say B", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant read these", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A on the list, B not on the list, C on the list, D not on the list", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "top three: A B D", "label": ["A", "B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "hi there", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A over B, no debate", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "shortlist: A B C", "label": ["A", "B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "test test test", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "how do i change my password", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A off, B off, C off, D off", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "I'd go C before B", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is clearly ahead of B", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "these 3 are wrong: A B D", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "is there an undo button", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A yes-ish, B no, C no, D yes-ish", "label": ["A", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is preferable to A", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: pass. B: keep. C: pass. D: keep.", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "yeah B yeah C", "label": ["B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is impossible", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can skip A entirely", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A rating low, B high, C low, D high", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep C and D on the list, D winning narrowly", "label": ["C", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can rule D out", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A awful, B awful, C excellent, D excellent", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is better than B", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A yes, B no, C no, D yes", "label": ["A", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is a no", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "airport is packed today", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "C and D, both nice", "label": ["C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "amazon delivery is late", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "im foggy on these", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "wish i was on vacation", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four options are wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "d is closer than a", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A close, B far, C close, D far", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "no B in the running", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: match. B: no match. C: match. D: no match.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four look decent honestly", "label": ["A", "B", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "picking C", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A.", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "B", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "my laptop is loud", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything is off", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "where's the help section", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four miss", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "the stock market is crashing", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "B off the table thanks", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A no, B a maybe, C a maybe, D no", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A B are off, C D fine", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the third one", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A green, B green, C red, D red", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "these four options all miss", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "honestly clueless", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "B and D both fit, D slightly closer", "label": ["B", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is markedly better than B", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "id keep A B and C", "label": ["A", "B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and C are strong", "label": ["A", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "C tops D", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "not confident about any", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "the C choice is off", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the first one", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "either B or C honestly", "label": ["B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "did india win", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "yeah on A and B", "label": ["A", "B"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and B are strong", "label": ["A", "B"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "the D choice is off", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and B on the table, A gets my vote", "label": ["A", "B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "target isn't any of these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "can i go back", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "not a clue", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is a candidate, B is out, C is a candidate, D is out", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A rating high, B low, C high, D low", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "hands down, D over A", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "these are all bad", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A hit, B hit, C miss, D miss", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B wrong, C wrong", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "leaning towards B C and D", "label": ["B", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "dark mode please", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "D stands out as wrong", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "D no thanks", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is better fitting than D", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "hard pass on all", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "the C one doesn't work", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "traffic was crazy today", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A tick, B cross, C tick, D cross", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "veto D and C", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is unacceptable", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "its a coin flip", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and C are both misses", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: OK. B: bad. C: OK. D: bad.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is the only misfit", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A more than B for sure", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "totally unsure", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: dislike. B: dislike. C: like. D: like.", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "reject D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "concert next weekend, cant wait", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "C and D look really solid", "label": ["C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A C D no", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A leads over D and stays with C in play", "label": ["A", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "leaning A over B", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is off, ignore it", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A a maybe, B no, C a maybe, D no", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "no dice at all", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "anything but A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "picking A B and D", "label": ["A", "B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "i really dont know", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "wrong: A, D", "label": ["B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is a mistake, others are on the table", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "digging A and B", "label": ["A", "B"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "remove everything except A", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A pretty close, B not close at all, C pretty close, D not close at all", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "shortlist: A B", "label": ["A", "B"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "vpn is being weird", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A hate it, B love it, C hate it, D love it", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "C? absolutely not.", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "skip C please", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "am i done yet", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "the whole set is bad", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "honestly after looking at all four of them for a while I think A and maybe C are the closest, B is just wrong somehow and D doesn't quite fit either though it's less wrong than B", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "banish D from consideration", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "clueless", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "picking B", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "the rest are fine, just not A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "bitcoin is up again", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "nada", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "reject A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "each is useless", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A whips B", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A miss, B miss, C hit, D hit", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "both B and D reasonable, D beating B", "label": ["B", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A a good match, B a bad match, C a good match, D a bad match", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "not any of these four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "id side with B before D", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "impossible to say", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "B, D are close", "label": ["B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "top three: A C D", "label": ["A", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "C D are off, A B fine", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "eh, not A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "i have no clue", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "not C not D", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "yeah A yeah B yeah D", "label": ["A", "B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "C easily bests A", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "every one of them is off", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and C are the ones", "label": ["A", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "id take C over B", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "each one is a dud", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "B C and D all fit", "label": ["B", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is out", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of these look right", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is way ahead of C", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "cut A and B, keep C and D", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "both C and D make sense, but C leads", "label": ["C", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "not liking any of these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "gotta be C", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "wait what am i supposed to do", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "all shown are misses", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "shown options are all wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "your guess is as good as mine", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "cut C and D, keep A and B", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "hate A, love B, love C, hate D", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "drawing a blank here", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "B off my list, keep the rest", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A + B + C are the closest three", "label": ["A", "B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "across the board no", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of these are right", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "B fails, others fine", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is decisively above D", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "love A, hate B, meh on C, love D", "label": ["A", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "skip A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "cross C off please", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "b is closer than c", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "what's 2+2", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "all but A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B > A", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "vacation soon", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of them fit", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "non-starters, all of them", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: love. B: hate. C: love. D: hate.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "who ate the last biscuit", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is more accurate than A", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "top three: A B C", "label": ["A", "B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is it", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "both B and C candidates, C ahead", "label": ["B", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "clearly C", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "just drop A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is head and shoulders above D", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A a maybe yes, B a maybe no, C a maybe yes, D a maybe no", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "the A one - no", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "im torn", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "on the fence about all of these", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is it", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "when does the app auto-save", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "quantum entanglement is weird huh", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "none look like the target", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "D takes the win over C", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are misfits", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "both A and B possibilities, A on top", "label": ["A", "B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "remove C from the list", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "none are usable", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "cross out all four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A pass, B fail, C pass, D fail", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: red light. B: green light. C: red light. D: green light.", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four options are duds", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "im not going with A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four eliminated", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "C and D both no", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not really A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not it: A, B", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C and D are both in the running, C edges it out", "label": ["C", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: potential. B: nope. C: potential. D: nope.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "they're basically indistinguishable", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant say which one", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant tell honestly", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "they all seem the same", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is stronger than A", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "my roommate ate my leftovers", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "im not going with C or B", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "ditch C and D", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not close, any of them", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "except for D everything is bad", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "netflix is boring lately", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A a match, B off, C off, D a match", "label": ["A", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "not it: D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "leaning toward A, maybe D, not B not C", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep C and A, but A leads", "label": ["A", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A candidate, B not, C candidate, D not", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A ideal, B not, C ideal, D not", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "codeforces round tonight?", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "im on the fence", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A right, B wrong, C right, D wrong", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B narrowly beats C", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "throw them all out", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "I don't like any of these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "packing is exhausting", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can eliminate C quickly", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "arxiv is down", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant read them", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four look equally close", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "all options are trash", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "no C thanks", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C rules out D", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "not sure honestly", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "havent got a clue", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "pass on all four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "not A, not B, not D", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep only A and D", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "cross out all of them", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "foggy", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only real problem is B", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A meh, B ok, C good, D bad", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is preferable to C", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "both C and D good, D closer to target", "label": ["C", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A not a fit, B a fit, C not a fit, D a fit", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "target not here", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "the exam was brutal", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is the better call vs B", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: strong. B: weak. C: strong. D: weak.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "third one's a miss", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "D beats A hands down", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "the whole batch is disqualified", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "these all suck", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "anything except D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant tell them apart", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything shown is wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate all but A and B", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is out of the question", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "if it's A vs B, I'm taking A", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A cross, B cross, C tick, D tick", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is preferable to A honestly", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "D over A hands down", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "all of these suck", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "does this thing work on mobile", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "hits: A, B. misses: C, D.", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "the whole batch misses", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and D both in play, A a touch better", "label": ["A", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "B C D are all off", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate A and C", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "clearly B", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "the movie last night was fire", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A nope; B great; C nope; D great", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four look plausible", "label": ["A", "B", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: not. B: acceptable. C: not. D: acceptable.", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "D crushes A", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "npm install is taking forever", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "torn on all four", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "this song is stuck in my head", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "workout was rough today", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is my pick", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "B and D are the ones", "label": ["B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "first one's wrong", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "yeah on A B and D", "label": ["A", "B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: dislike. B: like. C: like. D: dislike.", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "kind of a coin flip", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are junk", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is nowhere near", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate all of them", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A works, B works, C nope, D nope", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "no way to tell", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A checks out, B doesn't, C checks out, D doesn't", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: yes. B: no. C: yes. D: no.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is a step up from A", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "I like both B and D, but D fits better", "label": ["B", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "gotta be D", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "all no", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "zero matches here", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are off in some way", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "both A and B are solid, but A is slightly closer", "label": ["A", "B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "the website is really slow today", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "not it: C, D", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "package tracking says delivered but nothing here", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "leaning towards A C and D", "label": ["A", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is out of the question", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B and C both viable, B on top", "label": ["B", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "D can go", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "definitely not D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "id say A", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "meh cant tell", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "avoid C", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "rule out A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can eliminate A and D both", "label": ["B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A closer than D", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is it", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is a stronger match than A", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is more suitable than A", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "hard no across the board", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A B and C look promising", "label": ["A", "B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "both A and B stay in, A a bit stronger", "label": ["A", "B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: heck no. B: heck yes. C: heck no. D: heck yes.", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: pro. B: con. C: pro. D: con.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is closest", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A works. B doesn't. C works. D doesn't.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "they all look the same to me", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "heater broke again", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "cross off B and C", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A cross, B tick, C cross, D tick", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "need to charge my phone", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "no to all", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of them look like the target", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A wrong, B wrong, C wrong, D wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "they all look kinda the same", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "friday cant come soon enough", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "they all look similar", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is good, D is better", "label": ["C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: 3. B: 9. C: 2. D: 8.", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant choose", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are out", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "D doesn't belong", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A irrelevant, B relevant, C irrelevant, D relevant", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "hard to call", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "im going D", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are non-starters", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "i need a coffee", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "not D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B and D are strong", "label": ["B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can eliminate A and B", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is the one", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "no way A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the odd one out is A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "every option is bad", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "new season dropped, hyped", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "im getting bored", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only real problem is C", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: no. B: no. C: no. D: no.", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "docker broke my system again", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "the A one", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "i really cant judge", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A looks right", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: sure. B: sure. C: no. D: no.", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "sleepy", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "get rid of A and C", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A yay, B yay, C nay, D nay", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A disappointing, B promising, C disappointing, D promising", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A weak, B strong, C strong, D weak", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A ranks higher than B here", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "what time is it?", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant decide", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "gotta cut B", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "a and b", "label": ["A", "B"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A close, B close, C not close, D not close", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are candidates", "label": ["A", "B", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is my pick between D and B", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "any recommendations for dinner", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "wifi is dying", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "hmm, not D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "id rank D above C", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "gotta do laundry today", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is completely off", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A great, B meh, C terrible, D good", "label": ["A", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "petrol has gone up again", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "cut B and D", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: match. B: match. C: no match. D: no match.", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep A and C, both good, A better", "label": ["A", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "C > D full stop", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "prefer D to C by a lot", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "just definitely not the first or third one", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminating B from consideration", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "who am i talking to", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "gimme B before D any time", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "strike all four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "no on B, others yes", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "write me a poem", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "power's out", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "none are anywhere close", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is a no-go", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B and D stay in, B closer to target", "label": ["B", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "scratch C", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "bangalore weather is nice today", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "cross A off the list", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "strike everything", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A over D, no thinking needed", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "B and C both no, A and D possible", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not A, not B, not C", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A right, B right, C wrong, D wrong", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "I'll go with C", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "im hungry", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can skip B and C", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "rent is insane in this city", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A decent, B bad, C bad, D decent", "label": ["A", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can eliminate B and D easily", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "cross them all off", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of these look like it", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A fail, B pass, C fail, D pass", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "i cant distinguish these", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "the D one is not correct", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "moving next month", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "the whole batch is off", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "useless across all four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "battery dying", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A meh, B strong, C strong, D meh", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A nice, B nice, C ugh, D ugh", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "???", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "cut C from the list", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "no clue honestly", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A not viable, B viable, C not viable, D viable", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A doesn't fit at all", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "im not sure", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "sorry no idea", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "reject B and C, others stay", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A viable, B not viable, C viable, D not viable", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A off, B a match, C a match, D off", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "nope not A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "id say C", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "i truly cant tell", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "picking C over B", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is a notch above A", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "each one is bad", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "hey are you there", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "shortlist: C D", "label": ["C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "foggy on this one", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "not any of these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "nothing here matches", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: no match. B: match. C: no match. D: match.", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B unacceptable", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "asdfjkl", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "no preference", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "just a blur", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "nope not any of these four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "stumped", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "none feel like the target", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A worth a look, B not, C worth a look, D not", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is way ahead of D", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "not one of these is even close", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "big news today huh", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "need coffee", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and D off the table", "label": ["B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not A definitely not C", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A bad, B bad, C bad, D bad", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "im not into any of them", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "unclear", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "gonna go grab lunch brb", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "all except C and D", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A likely, B unlikely, C likely, D unlikely", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A works, B doesn't, C doesn't, D works", "label": ["A", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A ideal, B ideal, C not ideal, D not ideal", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "who knows", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is well ahead of C", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "dunno", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "nope none of them", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "B and C look right", "label": ["B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is wrong", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A bad, B decent, C decent, D bad", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is wrong, the rest could work", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "disqualify all four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "site keeps timing out", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "idk man", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of these belong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "not a match among these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "C shouldn't be considered", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and B stay in, B slightly stronger", "label": ["A", "B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "D over A no thinking", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only real problem is A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all of them except none, A B C and D all decent", "label": ["A", "B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "D? nope.", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "well, just not A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "trash all four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "id pick A well ahead of D", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "no idea sorry", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "C looks more promising than D by a mile", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A dominates B, no debate", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A wrong, B right, C right, D wrong", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is misleading, ignore", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "id say D", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is out of the running", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything is wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "b beats d clearly", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "impossible to tell", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "this is taking forever", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "except for B", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "lol", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "B over C, no question", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A fit, B fit, C not a fit, D not a fit", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "python is broken again", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: excellent, B: awful, C: excellent, D: awful", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A wins, B loses, C wins, D loses", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "reject all four", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep only C, remove the rest", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminating A altogether", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not feeling any of these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "shown options: all wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "both B and C fit, C a hair better", "label": ["B", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "obviously D", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "flight got delayed", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: thumbs up. B: thumbs down. C: thumbs up. D: thumbs down.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "each of these is off", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "no question, B ranks higher than D", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is unacceptable to me", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "this page keeps crashing", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "strike them all", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "none are workable", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "shortlist: A D", "label": ["A", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "mumbai monsoon is nuts", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: love it. B: hate it. C: love it. D: hate it.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "not really C either", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B option is misleading", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "D", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "D looks like the target", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "D preferred over B here", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep C and D, C a bit ahead", "label": ["C", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "sing me a song", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "candidates: A and B", "label": ["A", "B"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "given A and B, im on A's side", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "avoid A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is closest", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "none in the ballpark", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is disqualified", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A B C are wrong", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "trash all of them", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "genuinely no idea", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "B trumps C easily", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "im liking B and C", "label": ["B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is the pick vs B", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "rule out A and D", "label": ["B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can eliminate B quickly", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "none feel right", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "chuck D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: fine. B: fine. C: no. D: no.", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "sorry, none of them fit", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A implausible, B plausible, C plausible, D implausible", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "the whole set is wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of the above", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A good, B poor, C good, D poor", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "these are all garbage", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A not close, B not close, C close, D close", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "nope all four are off", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "no way for me to know", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A beats out C for sure", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and D both remain, D winning marginally", "label": ["A", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "all of them are misfits", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "did you see the news", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminating C", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "yeah on all four honestly", "label": ["A", "B", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "none in the right direction", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "why is everything so expensive now", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "my neighbor is playing loud music", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "surely not D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "zero good ones here", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything except B and D is a candidate", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: not. B: not. C: acceptable. D: acceptable.", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "chuck B and D", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything but A and B", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A poor, B good, C poor, D good", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "just remove D and A", "label": ["B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "D off the table", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "i dont get the instructions", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "no options here look right", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A whiffed, B nailed it, C whiffed, D nailed it", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "who won the nobel this year", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: hit. B: miss. C: hit. D: miss.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "id take A, not B, id take C, not D", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "the dog is barking", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate B, C, and D", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "watching a movie later", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant tell which one", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four seem equal", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "no way for me to tell", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is out, B is out, C is a candidate, D is a candidate", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "leaning B and D", "label": ["B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "only keep B and C", "label": ["B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "rofl", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything except D is a candidate", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "toss out B and D", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is out, B is a candidate, C is a candidate, D is out", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A no, B yes, C yes, D no", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "certainly not C", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "D more preferable than B", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A, C, D look promising", "label": ["A", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "picking A over C easy", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "nothing obvious", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: correct. B: wrong. C: correct. D: wrong.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "nothing clear", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A off the table", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "shortlist: B C D", "label": ["B", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "idk", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "D pips A at the post", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A B D decent", "label": ["A", "B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "just not A please", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "pass on all of these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: wrong. B: correct. C: correct. D: wrong.", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A leads a group with B, both stay in", "label": ["A", "B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "genuinely dont know", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "just bought a new phone", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything except A and C is a candidate", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "total toss up between all four", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is the one", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant say for sure", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "between A and C, C wins but A isn't bad", "label": ["A", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "i really have no idea", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "gotta go B, not D", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "im not into any of these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "nothing looks like it", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "id pick B before I pick D", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A not, B candidate, C not, D candidate", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A not on the list, B on the list, C not, D on the list", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A tick, B tick, C cross, D cross", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B? not really.", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "its a toss up", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "top picks: B and C", "label": ["B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "both A and C plausible, A ahead", "label": ["A", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "yes A", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A vs C -> A", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: potential. B: potential. C: nope. D: nope.", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "lost my notes again", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "im blanking", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A works, C works better, keep them both", "label": ["A", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "C and D are strong", "label": ["C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is disqualified from consideration", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "how many rounds are there", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "the whole set is a miss", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "delhi traffic is crazy", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A lame, B promising, C lame, D promising", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "prefer A to D honestly", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A unlikely, B unlikely, C likely, D likely", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A questionable, B looks good, C questionable, D looks good", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "both A and C are candidates, C leads slightly", "label": ["A", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "except A they're all wrong", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep A and C", "label": ["A", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything except B is fine", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "i just cant tell them apart", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "all too close to call", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "both B and D fit reasonably, D a touch better", "label": ["B", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A nope, B cool beans, C nope, D cool beans", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A not ideal, B ideal, C not ideal, D ideal", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "not A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: nope. B: potential. C: nope. D: potential.", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything but A works", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "watch out for the pothole", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: fine. B: no. C: fine. D: no.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A nailed it, B nailed it, C whiffed, D whiffed", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is not it", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C: no. D: no. A and B are alright", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "definitely not the D one", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "im going A", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "im going C", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "nothing fits", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "both C and D are candidates, D just barely wins", "label": ["C", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: no. B: sure. C: no. D: sure.", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A looks like the target", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "avoid B and D at all costs", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A checks out, B checks out, C doesn't, D doesn't", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A comfortably beats D", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A worthy, B unworthy, C worthy, D unworthy", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "each and every one of these is off", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "not confident to pick", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: acceptable. B: not. C: acceptable. D: not.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "d and b are both wrong", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "leaning towards A B and C", "label": ["A", "B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: no. B: fine. C: no. D: fine.", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "ditch A and B", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B and C are good matches", "label": ["B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "gonna say C over A", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "what's up", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "i really cant tell", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: 👍 B: 👎 C: 👍 D: 👎", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "love A and B, hate C and D", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is above D no doubt", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "these four are all wrong", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is my choice over B", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A promising, B not, C not, D promising", "label": ["A", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are misses", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A works I think, B nope, C works, D nope", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "erm, not B", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A, C are close", "label": ["A", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "not a single one fits", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is the one", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "wrong picks all around", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "i love pizza", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "no lean either way", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "fourth doesn't fit", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "yes C", "label": ["C"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "hard to say", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "C and D both feel close", "label": ["C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "zero of these are good", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "skip everything", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant decide between them", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "training for a marathon", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is nowhere near it", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "haha nice one", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "drop C", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not C for sure", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not A, not D", "label": ["B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is wrong, the others could work", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and D both stay, A the stronger pick", "label": ["A", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "D over B every time", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "cut D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is a dud", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: like. B: like. C: dislike. D: dislike.", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "I love football", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A + C are the closest", "label": ["A", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "yup A", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "not a match in the bunch", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: keep. B: keep. C: pass. D: pass.", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "not a chance with B", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "I like A, B, and D", "label": ["A", "B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "D outshines A here", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: pass. B: pass. C: keep. D: keep.", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "these four don't include the target", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "wrong: B, C", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "no strong lean", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "leave out B, C, D", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is my pick", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the third", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is disqualified in my book", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "wash for me", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "hits: C, D. misses: A, B.", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A no, B no, C a maybe, D a maybe", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "nope, none", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "cross out A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is the only misfit", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "obviously A", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "definitely not B or D", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of the shown options is right", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A works well, B doesn't, C works well, D doesn't", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are not it", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant differentiate", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four out", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A excellent, B excellent, C awful, D awful", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "all of them are bad", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four disqualified", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "any of these? no", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "no on all", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "how do i use this thing", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "how are you today", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A off, B off, C a match, D a match", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "nope not one of these", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "im stumped", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is way stronger than A", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "my cat is on the keyboard help", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "definitely not B", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "none of these are workable", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "no matches at all", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "C doesn't belong in the set", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A not a fit, B not a fit, C a fit, D a fit", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four flop", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A bad, B bad, C OK, D OK", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "between B and C, both good, C leads", "label": ["B", "C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant judge", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "C off the table", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "im choosing A over C", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "the odd one out is B", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are wrong to me", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "not one is even close", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "hate them all", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "keeping all four in play", "label": ["A", "B", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "too similar to tell", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "pass on them all", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "are you an AI", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: green light. B: red light. C: green light. D: red light.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "shown options: none right", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "B + D are the closest", "label": ["B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A weak, B solid, C weak, D solid", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "starving rn", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "not it: C", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "no opinion", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can eliminate A and C easily", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not doing D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "remove A, keep the rest", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "picking A B and C", "label": ["A", "B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "genuinely cant tell them apart", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate everything except C", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "hey what's the weather like", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A ranks over C easily", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A not a keeper, B a keeper, C a keeper, D not a keeper", "label": ["B", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "tough call", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "none are my target", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A nowhere close", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "prof was in a mood today", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "what model is this", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "no idea?", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "all of them are wrong picks", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "did you finish the assignment", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A tops C in this case", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "no idea whatsoever", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant separate them", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A totally outdoes B", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "the A choice is off", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A on the list, B on the list, C not, D not", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "blur, cant tell", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A worth it, B worth it, C not, D not", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "can't tell", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four flunk", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "did you see the new arXiv paper", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "I don't like any of them", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "sorry, none of these work", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "B and C disqualified", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "vote for A and D", "label": ["A", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A doesn't belong here", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "each of them is a miss", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "the D one - no thanks", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C fails, others could work", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A awful, B excellent, C awful, D excellent", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A great, B bad, C ok, D bad", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "just drop D from consideration", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "meh idk", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "the ac isn't working", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "they all look identical to me", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "A: acceptable. B: acceptable. C: not. D: not.", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and C", "label": ["A", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "so unclear to me", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "they all suck", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A works for me, B doesn't, C works for me, D doesn't", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "A and B look really solid", "label": ["A", "B"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "D pulls ahead of C", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A eh, B nope, C okay, D good", "label": ["C", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "cant say", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the fourth", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A relevant, B irrelevant, C relevant, D irrelevant", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "i hate mondays", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "i cant differentiate them", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "can't rank these", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "picking B C and D", "label": ["B", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "not A? correct.", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "hits: A, C. misses: B, D.", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "im on the fence about them", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "gotta cut A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B C D decent", "label": ["B", "C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "both A and B fit, A slightly closer", "label": ["A", "B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "banish A", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is my pick", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "nope, none of these are close", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "picking C not D", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "just ran 5k", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is the one", "label": ["D"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is off my list", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is the only one that's even close, the rest are way off", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "skip A and B", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can eliminate D quickly", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "definitely C, not A", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A a bad match, B a good match, C a bad match, D a good match", "label": ["B", "D"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "B doesn't belong", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the odd one out is C", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "reject all of them", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is closest", "label": ["A"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "yeah no, not C", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "no to A, no to B, no to C, no to D", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "id lean C rather than D", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "gotta go B not C", "label": ["B"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "D winning over A on this one", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "vote for B and C", "label": ["B", "C"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "A stays above B", "label": ["A"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "C off my list please", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is the clear winner vs D", "label": ["C"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "all four are off, sorry", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "could be B or D?", "label": ["B", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "definitely B", "label": ["B"], "category": "single_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is stronger than B", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "A B D are all wrong", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "they're all a wash", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "B can go", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can eliminate C and D", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "target isn't shown", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "my back hurts", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "yeah C yeah D", "label": ["C", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "gold prices are crazy", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A OK, B OK, C bad, D bad", "label": ["A", "B"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "the font is too small", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "these 3 are wrong: A B C", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the images aren't loading", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep A and D on the table, A being slightly better", "label": ["A", "D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "toss up", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "all same to me", "label": "*", "category": "uncertainty"}
+{"options": ["A", "B", "C", "D"], "utterance": "D more than C", "label": ["D"], "category": "comparative"}
+{"options": ["A", "B", "C", "D"], "utterance": "lmao", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "im liking A and D", "label": ["A", "D"], "category": "multi_positive"}
+{"options": ["A", "B", "C", "D"], "utterance": "all options are useless", "label": [], "category": "reject_all"}
+{"options": ["A", "B", "C", "D"], "utterance": "what time is your flight tomorrow", "label": "*", "category": "off_topic"}
+{"options": ["A", "B", "C", "D"], "utterance": "A cool, B not cool, C cool, D not cool", "label": ["A", "C"], "category": "mixed_sentiment"}
+{"options": ["A", "B", "C", "D"], "utterance": "we can skip D", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "chrome using too much ram", "label": "*", "category": "off_topic"}

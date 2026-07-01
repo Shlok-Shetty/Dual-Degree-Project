@@ -1,0 +1,50 @@
+{"options": ["A", "B", "C", "D"], "utterance": "A looks right", "label": ["A"]}
+{"options": ["A", "B", "C", "D"], "utterance": "definitely B", "label": ["B"]}
+{"options": ["A", "B", "C", "D"], "utterance": "I'll go with C", "label": ["C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "D", "label": ["D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "option A for sure", "label": ["A"]}
+{"options": ["A", "B", "C", "D"], "utterance": "the third one", "label": ["C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "A and C", "label": ["A", "C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "B and D both work", "label": ["B", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "I like A, B, and D", "label": ["A", "B", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "A, C, D look promising", "label": ["A", "C", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "either B or C honestly", "label": ["B", "C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "all of them except none, A B C and D all decent", "label": ["A", "B", "C", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "C is good, D is better", "label": ["C", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "A is okay but B is closer", "label": ["A", "B"]}
+{"options": ["A", "B", "C", "D"], "utterance": "between A and C, C wins but A isn't bad", "label": ["A", "C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "B is alright, D is the closest match though", "label": ["B", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "I'd rank A then C, both fine", "label": ["A", "C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "A is better than B", "label": ["A"]}
+{"options": ["A", "B", "C", "D"], "utterance": "C beats D", "label": ["C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "I prefer B over A", "label": ["B"]}
+{"options": ["A", "B", "C", "D"], "utterance": "D more than C", "label": ["D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "not D", "label": ["A", "B", "C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "anything but B", "label": ["A", "C", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "definitely not A or C", "label": ["B", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "rule out A", "label": ["B", "C", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "C is wrong, the others could work", "label": ["A", "B", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "none of these", "label": []}
+{"options": ["A", "B", "C", "D"], "utterance": "none look like the target", "label": []}
+{"options": ["A", "B", "C", "D"], "utterance": "I hate all of them", "label": []}
+{"options": ["A", "B", "C", "D"], "utterance": "all wrong", "label": []}
+{"options": ["A", "B", "C", "D"], "utterance": "nope, none of these are close", "label": []}
+{"options": ["A", "B", "C", "D"], "utterance": "I love football", "label": "*"}
+{"options": ["A", "B", "C", "D"], "utterance": "what time is it?", "label": "*"}
+{"options": ["A", "B", "C", "D"], "utterance": "this UI is broken", "label": "*"}
+{"options": ["A", "B", "C", "D"], "utterance": "lol", "label": "*"}
+{"options": ["A", "B", "C", "D"], "utterance": "I don't know", "label": "*"}
+{"options": ["A", "B", "C", "D"], "utterance": "they all look the same to me", "label": "*"}
+{"options": ["A", "B", "C", "D"], "utterance": "no idea", "label": "*"}
+{"options": ["A", "B", "C", "D"], "utterance": "can't tell", "label": "*"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is decent, B is bad, C maybe, D no", "label": ["A", "C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "I'd keep A and C in consideration but B and D look off", "label": ["A", "C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "B is the only one that's even close, the rest are way off", "label": ["B"]}
+{"options": ["A", "B", "C", "D"], "utterance": "A great, B meh, C terrible, D good", "label": ["A", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "leaning toward A, maybe D, not B not C", "label": ["A", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "is it A?", "label": ["A"]}
+{"options": ["A", "B", "C", "D"], "utterance": "could be B or D?", "label": ["B", "D"]}
+{"options": ["A", "B", "C", "D"], "utterance": "a and b", "label": ["A", "B"]}
+{"options": ["A", "B", "C", "D"], "utterance": "Optoin C looks fine", "label": ["C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "honestly after looking at all four of them for a while I think A and maybe C are the closest, B is just wrong somehow and D doesn't quite fit either though it's less wrong than B", "label": ["A", "C"]}
+{"options": ["A", "B", "C", "D"], "utterance": "ehh A I guess", "label": ["A"]}
