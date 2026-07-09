@@ -1304,53 +1304,143 @@
 {"options": ["A", "B", "C", "D"], "utterance": "id say B", "label": ["B"], "category": "single_positive"}
 {"options": ["A", "B", "C", "D"], "utterance": "id say C", "label": ["C"], "category": "single_positive"}
 {"options": ["A", "B", "C", "D"], "utterance": "id say D", "label": ["D"], "category": "single_positive"}
-{"options": ["A", "B", "C", "D"], "utterance": "A looks right", "label": ["A"]}
-{"options": ["A", "B", "C", "D"], "utterance": "definitely B", "label": ["B"]}
-{"options": ["A", "B", "C", "D"], "utterance": "I'll go with C", "label": ["C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "D", "label": ["D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "option A for sure", "label": ["A"]}
-{"options": ["A", "B", "C", "D"], "utterance": "the third one", "label": ["C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "A and C", "label": ["A", "C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "B and D both work", "label": ["B", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "I like A, B, and D", "label": ["A", "B", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "A, C, D look promising", "label": ["A", "C", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "either B or C honestly", "label": ["B", "C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "all of them except none, A B C and D all decent", "label": ["A", "B", "C", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "C is good, D is better", "label": ["C", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "A is okay but B is closer", "label": ["A", "B"]}
-{"options": ["A", "B", "C", "D"], "utterance": "between A and C, C wins but A isn't bad", "label": ["A", "C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "B is alright, D is the closest match though", "label": ["B", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "I'd rank A then C, both fine", "label": ["A", "C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "A is better than B", "label": ["A"]}
-{"options": ["A", "B", "C", "D"], "utterance": "C beats D", "label": ["C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "I prefer B over A", "label": ["B"]}
-{"options": ["A", "B", "C", "D"], "utterance": "D more than C", "label": ["D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "not D", "label": ["A", "B", "C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "anything but B", "label": ["A", "C", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "definitely not A or C", "label": ["B", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "rule out A", "label": ["B", "C", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "C is wrong, the others could work", "label": ["A", "B", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "none of these", "label": []}
-{"options": ["A", "B", "C", "D"], "utterance": "none look like the target", "label": []}
-{"options": ["A", "B", "C", "D"], "utterance": "I hate all of them", "label": []}
-{"options": ["A", "B", "C", "D"], "utterance": "all wrong", "label": []}
-{"options": ["A", "B", "C", "D"], "utterance": "nope, none of these are close", "label": []}
-{"options": ["A", "B", "C", "D"], "utterance": "I love football", "label": "*"}
-{"options": ["A", "B", "C", "D"], "utterance": "what time is it?", "label": "*"}
-{"options": ["A", "B", "C", "D"], "utterance": "this UI is broken", "label": "*"}
-{"options": ["A", "B", "C", "D"], "utterance": "lol", "label": "*"}
-{"options": ["A", "B", "C", "D"], "utterance": "I don't know", "label": "*"}
-{"options": ["A", "B", "C", "D"], "utterance": "they all look the same to me", "label": "*"}
-{"options": ["A", "B", "C", "D"], "utterance": "no idea", "label": "*"}
-{"options": ["A", "B", "C", "D"], "utterance": "can't tell", "label": "*"}
-{"options": ["A", "B", "C", "D"], "utterance": "A is decent, B is bad, C maybe, D no", "label": ["A", "C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "I'd keep A and C in consideration but B and D look off", "label": ["A", "C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "B is the only one that's even close, the rest are way off", "label": ["B"]}
-{"options": ["A", "B", "C", "D"], "utterance": "A great, B meh, C terrible, D good", "label": ["A", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "leaning toward A, maybe D, not B not C", "label": ["A", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "is it A?", "label": ["A"]}
-{"options": ["A", "B", "C", "D"], "utterance": "could be B or D?", "label": ["B", "D"]}
-{"options": ["A", "B", "C", "D"], "utterance": "a and b", "label": ["A", "B"]}
-{"options": ["A", "B", "C", "D"], "utterance": "Optoin C looks fine", "label": ["C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "honestly after looking at all four of them for a while I think A and maybe C are the closest, B is just wrong somehow and D doesn't quite fit either though it's less wrong than B", "label": ["A", "C"]}
-{"options": ["A", "B", "C", "D"], "utterance": "ehh A I guess", "label": ["A"]}
+{"options": ["A", "B", "C", "D"], "utterance": "except A, everything is wrong", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "except B, everything is wrong", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "except C, everything is wrong", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "except D, everything is wrong", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "except A, all are off", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "except B, all are off", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "except C, all are off", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "except D, all are off", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everyone except A is a miss", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everyone except B is a miss", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everyone except C is a miss", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everyone except D is a miss", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only one that isn't wrong is A", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only one that isn't wrong is B", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only one that isn't wrong is C", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only one that isn't wrong is D", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "apart from A, all are off", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "apart from B, all are off", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "apart from C, all are off", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "apart from D, all are off", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "aside from A, none work", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "aside from B, none work", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "aside from C, none work", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "aside from D, none work", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all wrong except A", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all wrong except B", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all wrong except C", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all wrong except D", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything else is bad, only A is fine", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything else is bad, only B is fine", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything else is bad, only C is fine", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything else is bad, only D is fine", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "besides A, all are off", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "besides B, all are off", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "besides C, all are off", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "besides D, all are off", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "only A survives, everything else is out", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "only B survives, everything else is out", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "only C survives, everything else is out", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "only D survives, everything else is out", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the rest are wrong, A is the only one", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the rest are wrong, B is the only one", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the rest are wrong, C is the only one", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the rest are wrong, D is the only one", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "save for A, all miss", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "save for B, all miss", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "save for C, all miss", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "save for D, all miss", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all off except A", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all off except B", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all off except C", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "all off except D", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything's wrong except A", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything's wrong except B", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything's wrong except C", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything's wrong except D", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only exception is A, rest are misses", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only exception is B, rest are misses", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only exception is C, rest are misses", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the only exception is D, rest are misses", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "A is the sole survivor, others out", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "B is the sole survivor, others out", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "C is the sole survivor, others out", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "D is the sole survivor, others out", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "wipe everything except A", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "wipe everything except B", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "wipe everything except C", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "wipe everything except D", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything except A is a mistake", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything except B is a mistake", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the first", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the second", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the third", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the fourth", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the first one", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the second one", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the third one", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the fourth one", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the first is wrong", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the second is wrong", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the third is wrong", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the fourth is wrong", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the first one is wrong", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the second one is wrong", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the third one is wrong", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the fourth one is wrong", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "first one is off", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "second one is off", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "third one is off", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "fourth one is off", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate the first", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate the second", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate the third", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "eliminate the fourth", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "drop the first one", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "drop the second one", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "drop the third one", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "drop the fourth one", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the first doesn't fit", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the second doesn't fit", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the third doesn't fit", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the fourth doesn't fit", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "rule out the first", "label": ["B", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "rule out the second", "label": ["A", "C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "rule out the third", "label": ["A", "B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "rule out the fourth", "label": ["A", "B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the first or the second", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the third or the fourth", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the first or the third", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the second or the fourth", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the first or the fourth", "label": ["B", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "not the second or the third", "label": ["A", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the first and second are wrong", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the third and fourth are wrong", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the first and third are wrong", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the second and fourth are wrong", "label": ["A", "C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the first, second, and third are all wrong", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the first, second, and fourth are all wrong", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the first, third, and fourth are all wrong", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the second, third, and fourth are all wrong", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "only the first works", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "only the second works", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "only the third works", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "only the fourth works", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep only the first", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep only the second", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep only the third", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "keep only the fourth", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the first is the only one", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the second is the only one", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the third is the only one", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the fourth is the only one", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything except the first is wrong", "label": ["A"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything except the second is wrong", "label": ["B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything except the third is wrong", "label": ["C"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "everything except the fourth is wrong", "label": ["D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the first and second are the misses", "label": ["C", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "the third and fourth are the misses", "label": ["A", "B"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "toss the first and third", "label": ["B", "D"], "category": "negation"}
+{"options": ["A", "B", "C", "D"], "utterance": "toss the second and fourth", "label": ["A", "C"], "category": "negation"}
