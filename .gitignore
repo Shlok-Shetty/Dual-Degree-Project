@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 .env
 checkpoints/
+comparison-search-llm/scenery-search/data/intel_images/

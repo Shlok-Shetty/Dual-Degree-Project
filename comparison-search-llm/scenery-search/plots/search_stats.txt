@@ -1,0 +1,33 @@
+SCENERY SEARCH — 600 images, D_work=10, sigma_eps=0.45
+CLIP model: openai/clip-vit-base-patch32
+Classes: ['buildings', 'forest', 'glacier', 'mountain', 'sea', 'street']
+
+=== GAUSSSEARCH, argmax stopping ===
+  mean=27.58, median=22.0, std=20.96
+  percentiles: p25=14.0, p50=22.0, p75=33.0, p90=50.0, p95=69.0, p99=107.0
+  max=172, unconverged=0/600
+
+=== GAUSSSEARCH, in_query stopping ===
+  mean=16.85, median=17.0, std=6.89
+  percentiles: p25=12.0, p50=17.0, p75=21.0, p90=26.0, p95=29.0, p99=35.0
+  max=43, unconverged=0/600
+
+=== RAND, argmax stopping ===
+  mean=58.40, median=37.0
+  unconverged=8/600 (cap=500)
+
+=== RAND, in_query stopping ===
+  mean=148.25, median=147.0
+  unconverged=0/600 (cap=500)
+
+=== Head-to-head (in_query) ===
+  GAUSSSEARCH mean=16.85 vs RAND mean=148.25
+  RAND is 8.80x slower
+
+=== Per-class (argmax stopping) ===
+  buildings: mean= 22.5  median= 22.0  max= 69
+  forest   : mean= 33.7  median= 25.0  max=111
+  glacier  : mean= 33.4  median= 23.5  max=172
+  mountain : mean= 25.0  median= 22.0  max= 94
+  sea      : mean= 24.1  median= 20.5  max= 83
+  street   : mean= 26.8  median= 23.0  max=116
