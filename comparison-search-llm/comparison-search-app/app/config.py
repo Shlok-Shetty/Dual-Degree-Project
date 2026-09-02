@@ -20,9 +20,9 @@ IMAGES_DIR = SCENERY_DATA / "intel_images"
 # checkpoints/ folders are gitignored, so this path is only resolvable on
 # the machine that has the adapter locally (or after downloading from HF).
 PARSER_BASE = "Qwen/Qwen2.5-3B-Instruct"
-PARSER_ADAPTER_LOCAL = PROJECT_ROOT / "parser" / "checkpoints" / "qwen3b-qlora-v1" / "checkpoint-240"
+PARSER_ADAPTER_LOCAL = PROJECT_ROOT / "parser" / "checkpoints" / "qwen3b-qlora-v2" / "checkpoint-final"
 # Fallback: pull from HF Hub if the local adapter isn't there.
-PARSER_ADAPTER_HF = "Nightshade2304/qwen3b-comparison-parser-v1"
+PARSER_ADAPTER_HF = "Nightshade2304/qwen3b-comparison-parser-v2"
 
 VERBALIZER_MODEL = "Qwen/Qwen2.5-1.5B-Instruct"
 
@@ -46,8 +46,8 @@ VERBALIZER_STYLES = [
     ("letter",     "Just say the letter: 'A' or 'B'. Nothing else."),
     ("ordinal",    "Say 'the first one' if they picked A, or 'the second one' if they picked B. Nothing else."),
     ("positional", "Say 'the left one' if they picked A, or 'the right one' if they picked B. Nothing else."),
-    ("direct",     "Commit clearly to their choice in one short sentence. Examples: 'Option A.', 'I'll go with B.', 'A for sure.'"),
-    ("casual",     "Casual and short, 3-6 words, but commit clearly. Examples: 'A works', 'B for me', 'gimme A'."),
+    ("direct",     "Commit clearly to their choice in one short sentence. The output MUST contain the letter (A or B) or a position word (left, right, first, second). Examples: 'Option A.', 'I'll go with B.', 'A for sure.'"),
+    ("casual",     "Casual and short, 3-6 words. The output MUST contain the letter (A or B) or a position word (left, right, first, second). Never emit bare positive words alone. Examples: 'A works', 'B for me', 'gimme A', 'yeah A', 'B looks good'."),
 ]
 
 PARSER_SYSTEM_PROMPT = """You are a parser that converts a user's natural language response into a subset of the shown options.
@@ -65,6 +65,7 @@ Rules:
 - "X and Y are both good, X is better" endorses both X and Y.
 - Negations like "not D" or "anything but B" mean the remaining options go in the list.
 - Questions like "is it A?" are treated as tentative endorsement of A.
+- CRITICAL: If the utterance is only a short positive reaction that does NOT reference any option (e.g. "works great", "perfect", "nice one", "go with it", "that works", "cool"), output "*". A positive word alone is not enough. To count as an endorsement, the user must reference the options - either by letter (A, B, C, D), position (left, right, first, second, middle, last), quantifier over options (all, both, either, these, the ones, all four, both of them), or description that clearly points at an option.
 
 Output ONLY the JSON. No explanation, no prose."""
 
