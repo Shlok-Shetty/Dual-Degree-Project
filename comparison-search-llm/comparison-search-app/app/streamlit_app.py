@@ -563,7 +563,7 @@ def screen_llm_search(emb: Embeddings):
         y_true = engine.oracle_answer(i, j)
         picked = "A" if y_true == 0 else "B"
         info_holder.info("verbalizer generating...")
-        utt, style = verbalizer.verbalize(picked, rng_lang)
+        utt, style = verbalizer.verbalize(picked, rng_lang, parser=parser)
         info_holder.info("parser...")
         parsed, raw = parser.parse(utt, options=("A", "B"))
         info_holder.empty()
