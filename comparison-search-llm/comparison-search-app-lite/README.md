@@ -41,19 +41,58 @@ comparison-search-app-lite/
 
 ## Setup
 
-```
-pip install -r comparison-search-app-lite/requirements.txt
-```
+Requires Python 3.10 or newer.
 
-That's it. No torch, no transformers, no CUDA. Runs on any machine.
-
-## Run
+### 1. Clone the repo and go into the lite app folder
 
 ```
-streamlit run comparison-search-app-lite/run_app.py
+git clone https://github.com/Shlok-Shetty/Dual-Degree-Project.git
+cd Dual-Degree-Project/comparison-search-llm/comparison-search-app-lite
 ```
 
-Opens instantly since there's no model loading.
+### 2. Create and activate a virtual environment
+
+**Windows (cmd):**
+```
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+**Windows (PowerShell):**
+```
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+**macOS / Linux:**
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+**Or with conda:**
+```
+conda create -n comparison-search-lite python=3.11 -y
+conda activate comparison-search-lite
+```
+
+### 3. Install requirements
+
+```
+pip install -r requirements.txt
+```
+
+Only four packages: streamlit, numpy, scipy, pillow. No torch, no CUDA.
+Install takes ~30 seconds.
+
+### 4. Run
+
+```
+streamlit run run_app.py
+```
+
+Opens in your browser at `http://localhost:8501`. First load is instant —
+no model loading.
 
 ## Notes
 
