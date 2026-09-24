@@ -6,3 +6,4 @@ checkpoints/
 comparison-search-llm/scenery-search/data/intel_images/
 comparison-search-llm/scenery-search/notebooks/Untitled*.ipynb
 comparison-search-llm/scenery-search/notebooks/closed_loop_100_v*_buggy*.pkl
+comparison-search-llm/scenery-search/data/hf_upload_staging/ 
