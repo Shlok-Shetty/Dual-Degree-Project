@@ -3,7 +3,7 @@
 Images are auto-downloaded from HuggingFace Hub on first run if they aren't
 present locally (Nightshade2304/scenery-search-images).
 """
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 import numpy as np
 
 from . import config
@@ -66,7 +66,7 @@ class Embeddings:
         # HF dataset is organized as <class>/<filename>.jpg — same as our
         # staging layout — so class + filename is enough.
         label = self.labels[idx]
-        candidate = self._images_root / str(label) / p.name
+        candidate = self._images_root / str(label) / PureWindowsPath(self.paths[idx]).name
         if candidate.exists():
             return candidate
         # Last-resort: legacy intel_images layout
