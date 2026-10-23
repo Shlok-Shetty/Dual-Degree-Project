@@ -13,7 +13,7 @@ SIGMA_EPS = 0.05
 MAX_QUERIES = 50
 DEFAULT_SEED = 42
 
-DRIVE_GALLERY_URL = "https://drive.google.com/drive/folders/PLACEHOLDER"
+DRIVE_GALLERY_URL = "https://huggingface.co/datasets/Nightshade2304/scenery-search-images"
 
 CLASS_COLORS = {
     "buildings": "#e74c3c",

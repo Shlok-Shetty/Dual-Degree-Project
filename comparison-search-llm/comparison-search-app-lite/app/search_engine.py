@@ -1,7 +1,7 @@
 """GAUSSSEARCH primitives + stateful SearchEngine.
 
-Math is copy-pasted verbatim from gamma-ckl/notebooks/01_gauss_search.ipynb and
-scenery-search/notebooks/03_gauss_search_3d_viz.ipynb so behavior matches your
+Math is copy-pasted verbatim from search-algorithm/notebooks/01_gauss_search.ipynb and
+scenery-search/notebooks/02_gauss_search_3d_viz.ipynb so behavior matches the
 existing experiments.
 """
 import numpy as np
@@ -79,15 +79,9 @@ def adf_update(mu, Sigma, x_i, x_j, y, sigma_eps):
 class SearchEngine:
     """Stateful GAUSSSEARCH — one step at a time so the UI can drive it.
 
-    Usage:
-        engine = SearchEngine(X, sigma_eps=0.05, target_idx=42, seed=1)
-        while not engine.done:
-            i, j = engine.propose_query()
-            # ... show images, obtain answer y ∈ {0, 1} (or None to skip) ...
-            engine.apply_answer(y)
-
-    Swap this out for γ-CKL later by mirroring the same surface:
-    propose_query, apply_answer, done, step, step_records, belief_stats.
+    Public interface mirrors GammaCKLEngine so the Streamlit app can swap
+    between them: propose_query, oracle_answer, apply_answer, stop_manual,
+    step, done, stop_reason.
     """
 
     def __init__(self, X: np.ndarray, sigma_eps: float = config.SIGMA_EPS,
@@ -107,11 +101,10 @@ class SearchEngine:
         self.step_records: list[dict] = []
 
         self.done = False
-        self.stop_reason: str | None = None  # in_query | max_queries | user_found_target
+        self.stop_reason: str | None = None
         self._pending_query: tuple[int, int] | None = None
 
     def propose_query(self) -> tuple[int, int]:
-        """Return (i, j) for the next query. Idempotent within a step."""
         if self.done:
             raise RuntimeError("search already finished")
         if self._pending_query is None:
@@ -120,7 +113,6 @@ class SearchEngine:
         return self._pending_query
 
     def oracle_answer(self, i: int, j: int) -> int:
-        """Ground-truth Probit oracle answer. Requires known target (LLM mode)."""
         if self.target_idx is None:
             raise RuntimeError("oracle_answer requires target_idx")
         return query_oracle(self.X[i], self.X[j], self.X[self.target_idx],
@@ -131,8 +123,6 @@ class SearchEngine:
                      style: str | None = None,
                      parsed=None,
                      status: str = "clean") -> dict:
-        """Advance by one step. y=None skips the belief update but still counts
-        the step and marks (i, j) as used."""
         if self.done:
             raise RuntimeError("search already finished")
         if self._pending_query is None:
@@ -154,7 +144,6 @@ class SearchEngine:
             "applied_update": False,
         }
 
-        # in-query stop happens BEFORE update (paper §6.3, matches user-study UX)
         if target_in_query:
             self.done = True
             self.stop_reason = "in_query"

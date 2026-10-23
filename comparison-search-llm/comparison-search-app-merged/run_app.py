@@ -9,7 +9,6 @@ Or with an absolute path from anywhere:
 import sys
 from pathlib import Path
 
-# make the `app` package importable regardless of where streamlit was launched
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from app.streamlit_app import main

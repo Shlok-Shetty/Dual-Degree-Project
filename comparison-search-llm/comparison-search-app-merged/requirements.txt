@@ -1,0 +1,24 @@
+# comparison-search-app requirements
+#
+# NOTE: install torch BEFORE this file. See README.md for the torch install
+# command for your platform (CPU, CUDA 11.8, 12.1, 12.4, 12.8). Keeping torch
+# out of this file is deliberate — pinning a specific build here breaks the
+# install on any other GPU / CUDA version. Pip will NOT upgrade/downgrade
+# an already-installed torch.
+
+# Hugging Face stack
+transformers>=4.40,<5.0
+peft>=0.10
+accelerate>=0.30
+huggingface_hub>=0.20
+
+# 4-bit quantization for the parser. CUDA builds only — macOS skipped.
+bitsandbytes>=0.43; sys_platform != "darwin"
+
+# Scientific
+numpy>=1.24
+scipy>=1.11
+pillow>=10.0
+
+# App
+streamlit>=1.30

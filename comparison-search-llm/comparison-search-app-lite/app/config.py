@@ -10,8 +10,11 @@ EMBEDDING_NPZ = SCENERY_DATA / "scenery_embedding.npz"
 IMAGES_DIR = SCENERY_DATA / "intel_images"
 
 SIGMA_EPS = 0.05
+GAMMA = 5.0
 MAX_QUERIES = 50
 DEFAULT_SEED = 42
+
+DEFAULT_ALGO = "GAUSSSEARCH"  # or "gamma-CKL"
 
 DRIVE_GALLERY_URL = "https://huggingface.co/datasets/Nightshade2304/scenery-search-images"
 

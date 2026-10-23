@@ -1,3 +1,9 @@
+"""Streamlit interface for the lite comparison-search app.
+
+Supports two engines: GAUSSSEARCH (Chumbalov 2020) and γ-CKLSearch
+(Chumbalov 2024, Algorithm 3). The user picks one on the home screen
+and both modes (human search, auto-run) use the chosen engine.
+"""
 import time
 import numpy as np
 import streamlit as st
@@ -6,6 +12,11 @@ from PIL import Image, ImageOps
 from . import config
 from .embeddings import Embeddings
 from .search_engine import SearchEngine
+from .gamma_ckl_engine import GammaCKLEngine
+
+ALGO_GAUSS = "GAUSSSEARCH"
+ALGO_GCKL = "gamma-CKL"
+ALGO_OPTIONS = [ALGO_GAUSS, ALGO_GCKL]
 
 IMG_WIDTH = 460
 IMG_WIDTH_HISTORY = 200
@@ -44,18 +55,6 @@ COMPACT_CSS = """
         font-size: 0.95rem;
         margin-top: 0.6rem;
     }
-    .picked-frame {
-        border: 4px solid #27ae60 !important;
-        border-radius: 8px;
-        padding: 4px;
-        margin: 4px 0;
-    }
-    .target-frame {
-        border: 3px solid #e74c3c !important;
-        border-radius: 8px;
-        padding: 4px;
-        margin: 4px 0;
-    }
     .col-header {
         text-align: center;
         font-weight: 600;
@@ -63,22 +62,70 @@ COMPACT_CSS = """
         height: 24px;
     }
     .col-header-target { color: #e74c3c; }
+    .algo-sub {
+        text-align: center;
+        font-size: 0.95rem;
+        color: #aaa;
+        margin-top: -8px;
+        margin-bottom: 8px;
+    }
 </style>
 """
+
 
 @st.cache_resource(show_spinner=False)
 def load_embeddings() -> Embeddings:
     return Embeddings()
 
+
 def go(screen: str):
     st.session_state.screen = screen
     st.rerun()
 
+
 def reset_all():
+    saved_algo = st.session_state.get("algo", config.DEFAULT_ALGO)
     for k in list(st.session_state.keys()):
         del st.session_state[k]
+    st.session_state.algo = saved_algo
 
-def show_image(idx: int, emb: Embeddings, caption: str, *, highlight: str | None = None, width: int | None = None):
+
+def current_algo() -> str:
+    return st.session_state.get("algo", config.DEFAULT_ALGO)
+
+
+def new_engine(emb: Embeddings, *, target_idx: int | None = None,
+               max_queries: int = HUMAN_MAX_QUERIES):
+    """Factory: build whichever engine the user picked on the home screen."""
+    algo = current_algo()
+    rng = np.random.default_rng()
+    seed = int(rng.integers(0, 1_000_000))
+    if algo == ALGO_GCKL:
+        return GammaCKLEngine(
+            X=emb.X,
+            gamma=config.GAMMA,
+            target_idx=target_idx,
+            seed=seed,
+            max_queries=max_queries,
+        )
+    return SearchEngine(
+        X=emb.X,
+        sigma_eps=config.SIGMA_EPS,
+        target_idx=target_idx,
+        seed=seed,
+        max_queries=max_queries,
+    )
+
+
+def algo_subtitle() -> str:
+    algo = current_algo()
+    if algo == ALGO_GCKL:
+        return f"γ-CKLSearch (Chumbalov 2024), γ = {config.GAMMA}"
+    return f"GAUSSSEARCH (Chumbalov 2020), σε = {config.SIGMA_EPS}"
+
+
+def show_image(idx: int, emb: Embeddings, caption: str, *,
+               highlight: str | None = None, width: int | None = None):
     path = emb.image_path(idx)
     if not path.exists():
         st.warning(f"image missing: {path}")
@@ -105,6 +152,7 @@ def show_image(idx: int, emb: Embeddings, caption: str, *, highlight: str | None
     if caption:
         st.caption(caption)
 
+
 def render_inline_history(emb: Embeddings):
     hist = st.session_state.get("history", [])
     if not hist:
@@ -119,6 +167,7 @@ def render_inline_history(emb: Embeddings):
             st.markdown(
                 f"**{rec['step'] + 1}.** {emb.label(i)} vs {emb.label(j)} -> **{choice}**"
             )
+
 
 def render_history_with_images(emb: Embeddings):
     hist = st.session_state.get("history", [])
@@ -145,9 +194,9 @@ def render_history_with_images(emb: Embeddings):
         i, j = rec["i"], rec["j"]
         choice = rec.get("choice")
         if choice == "A":
-            a_hl, b_hl, verdict = "chosen", "rejected", "oracle picked A"
+            a_hl, b_hl, verdict = "chosen", "rejected", "picked A"
         elif choice == "B":
-            a_hl, b_hl, verdict = "rejected", "chosen", "oracle picked B"
+            a_hl, b_hl, verdict = "rejected", "chosen", "picked B"
         elif choice == "skip":
             a_hl, b_hl, verdict = None, None, "skipped"
         else:
@@ -163,39 +212,39 @@ def render_history_with_images(emb: Embeddings):
                         highlight=b_hl, width=IMG_WIDTH_HISTORY)
         st.markdown("---")
 
+
 def screen_home(emb: Embeddings):
     st.title("comparison-based search (lite)")
     st.markdown(
-        "Find a scenery image by comparing pairs. Click whichever image is "
-        "closer to what you have in mind; the search narrows down until you "
-        "find your target."
+        "Find a scenery image by comparing pairs. Pick an algorithm, "
+        "then either drive the search yourself or watch the simulated-user "
+        "auto-run."
     )
+    st.markdown("")
+
+    algo = st.radio(
+        "Algorithm",
+        options=ALGO_OPTIONS,
+        index=ALGO_OPTIONS.index(current_algo()),
+        horizontal=True,
+        key="algo",
+    )
+    st.markdown(f'<div class="algo-sub">{algo_subtitle()}</div>', unsafe_allow_html=True)
     st.markdown("")
 
     col1, col2 = st.columns(2)
     with col1:
         if st.button("Start search (human)", type="primary", use_container_width=True):
-            rng = np.random.default_rng()
-            st.session_state.engine = SearchEngine(
-                X=emb.X,
-                sigma_eps=config.SIGMA_EPS,
-                target_idx=None,
-                seed=int(rng.integers(0, 1_000_000)),
-                max_queries=HUMAN_MAX_QUERIES,
-            )
+            st.session_state.engine = new_engine(emb, target_idx=None,
+                                                   max_queries=HUMAN_MAX_QUERIES)
             st.session_state.history = []
             go("human_search")
     with col2:
         if st.button("Auto-run (simulated user)", type="primary", use_container_width=True):
             rng = np.random.default_rng()
             target = int(rng.integers(0, emb.n))
-            st.session_state.engine = SearchEngine(
-                X=emb.X,
-                sigma_eps=config.SIGMA_EPS,
-                target_idx=target,
-                seed=int(rng.integers(0, 1_000_000)),
-                max_queries=AUTO_MAX_QUERIES,
-            )
+            st.session_state.engine = new_engine(emb, target_idx=target,
+                                                   max_queries=AUTO_MAX_QUERIES)
             st.session_state.history = []
             st.session_state.auto_target_idx = target
             st.session_state.auto_playing = False
@@ -210,8 +259,9 @@ def screen_home(emb: Embeddings):
         f"{emb.n} images across {len(emb.classes())} classes"
     )
 
+
 def screen_human_search(emb: Embeddings):
-    engine: SearchEngine = st.session_state.engine
+    engine = st.session_state.engine
 
     top = st.columns([1, 4, 1])
     with top[0]:
@@ -282,9 +332,10 @@ def screen_human_search(emb: Embeddings):
 
     render_inline_history(emb)
 
+
 @st.fragment(run_every="0.05s")
 def screen_auto_search(emb: Embeddings):
-    engine: SearchEngine = st.session_state.engine
+    engine = st.session_state.engine
     target_idx = st.session_state.get("auto_target_idx")
     playing = st.session_state.get("auto_playing", False)
     showing_answer = st.session_state.get("auto_showing_answer", False)
@@ -296,9 +347,15 @@ def screen_auto_search(emb: Embeddings):
             st.session_state.screen = "home"
             st.rerun(scope="app")
     with top[1]:
-        st.markdown(f'<div class="query-counter">Query {engine.step + 1} / {AUTO_MAX_QUERIES}</div>', unsafe_allow_html=True)
+        st.markdown(
+            f'<div class="query-counter">Query {engine.step + 1} / {AUTO_MAX_QUERIES}</div>',
+            unsafe_allow_html=True,
+        )
     with top[2]:
-        st.markdown(f'<div class="answered-badge"><b>{engine.step}</b> answered</div>', unsafe_allow_html=True)
+        st.markdown(
+            f'<div class="answered-badge"><b>{engine.step}</b> answered</div>',
+            unsafe_allow_html=True,
+        )
 
     if engine.done:
         st.session_state.screen = "auto_result"
@@ -380,9 +437,7 @@ def screen_auto_search(emb: Embeddings):
     with col_a:
         st.markdown('<div class="col-header">A</div>', unsafe_allow_html=True)
         show_image(
-            i,
-            emb,
-            emb.label(i),
+            i, emb, emb.label(i),
             highlight="chosen" if picked_side == "A" else None,
             width=IMG_WIDTH,
         )
@@ -390,9 +445,7 @@ def screen_auto_search(emb: Embeddings):
     with col_b:
         st.markdown('<div class="col-header">B</div>', unsafe_allow_html=True)
         show_image(
-            j,
-            emb,
-            emb.label(j),
+            j, emb, emb.label(j),
             highlight="chosen" if picked_side == "B" else None,
             width=IMG_WIDTH,
         )
@@ -403,11 +456,8 @@ def screen_auto_search(emb: Embeddings):
             unsafe_allow_html=True,
         )
         show_image(
-            target_idx,
-            emb,
-            emb.label(target_idx),
-            highlight="target",
-            width=IMG_WIDTH,
+            target_idx, emb, emb.label(target_idx),
+            highlight="target", width=IMG_WIDTH,
         )
 
     if picked_side is not None:
@@ -432,11 +482,13 @@ def screen_auto_search(emb: Embeddings):
 
     render_inline_history(emb)
 
+
 def screen_human_result(emb: Embeddings):
-    engine: SearchEngine = st.session_state.engine
+    engine = st.session_state.engine
     found_idx = st.session_state.get("found_idx")
 
     st.title("Search complete")
+    st.caption(algo_subtitle())
     if engine.stop_reason == "user_found_target":
         st.success(f"Found in {engine.step} queries.")
     elif engine.stop_reason == "max_queries":
@@ -468,25 +520,21 @@ def screen_human_result(emb: Embeddings):
     if col1.button("New search", type="primary", use_container_width=True):
         for k in ("engine", "history", "found_idx"):
             st.session_state.pop(k, None)
-        rng = np.random.default_rng()
-        st.session_state.engine = SearchEngine(
-            X=load_embeddings().X,
-            sigma_eps=config.SIGMA_EPS,
-            target_idx=None,
-            seed=int(rng.integers(0, 1_000_000)),
-            max_queries=HUMAN_MAX_QUERIES,
-        )
+        st.session_state.engine = new_engine(emb, target_idx=None,
+                                               max_queries=HUMAN_MAX_QUERIES)
         st.session_state.history = []
         go("human_search")
     if col2.button("Home", use_container_width=True):
         reset_all()
         go("home")
 
+
 def screen_auto_result(emb: Embeddings):
-    engine: SearchEngine = st.session_state.engine
+    engine = st.session_state.engine
     target_idx = st.session_state.get("auto_target_idx")
 
     st.title("Auto-run complete")
+    st.caption(algo_subtitle())
     if engine.stop_reason == "in_query":
         st.success(f"Target reached in {engine.step} queries.")
     elif engine.stop_reason == "max_queries":
@@ -513,17 +561,15 @@ def screen_auto_result(emb: Embeddings):
 
     col1, col2 = st.columns(2)
     if col1.button("Run again", type="primary", use_container_width=True):
-        for k in ("engine", "history", "auto_target_idx", "auto_playing", "auto_speed", "auto_next_time", "auto_showing_answer", "auto_i", "auto_j", "auto_y", "auto_picked_side"):
+        for k in ("engine", "history", "auto_target_idx", "auto_playing",
+                  "auto_speed", "auto_next_time", "auto_showing_answer",
+                  "auto_i", "auto_j", "auto_y", "auto_picked_side",
+                  "auto_answer_time"):
             st.session_state.pop(k, None)
         rng = np.random.default_rng()
         target = int(rng.integers(0, emb.n))
-        st.session_state.engine = SearchEngine(
-            X=load_embeddings().X,
-            sigma_eps=config.SIGMA_EPS,
-            target_idx=target,
-            seed=int(rng.integers(0, 1_000_000)),
-            max_queries=AUTO_MAX_QUERIES,
-        )
+        st.session_state.engine = new_engine(emb, target_idx=target,
+                                               max_queries=AUTO_MAX_QUERIES)
         st.session_state.history = []
         st.session_state.auto_target_idx = target
         st.session_state.auto_playing = False
@@ -535,6 +581,7 @@ def screen_auto_result(emb: Embeddings):
         reset_all()
         go("home")
 
+
 def main():
     st.set_page_config(
         page_title="comparison-search (lite)",
@@ -545,6 +592,8 @@ def main():
 
     if "screen" not in st.session_state:
         st.session_state.screen = "home"
+    if "algo" not in st.session_state:
+        st.session_state.algo = config.DEFAULT_ALGO
 
     emb = load_embeddings()
 
@@ -563,6 +612,7 @@ def main():
         st.error(f"unknown screen: {screen}")
         if st.button("Home"):
             go("home")
+
 
 if __name__ == "__main__":
     main()

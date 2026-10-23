@@ -1,28 +1,29 @@
 # comparison-search-app-lite
 
-The LLM-free version of the comparison-search demo. Same GAUSSSEARCH engine,
-same scenery images, no parser and no verbalizer — you just click A, B, or
-Skip on each pair.
+The LLM-free comparison-search demo on the scenery dataset. Pick an
+algorithm on the home screen (GAUSSSEARCH or γ-CKLSearch), then either
+drive the search by hand or watch the simulated-user auto-run.
 
-Sits alongside `comparison-search-app/`, `parser/`, `search-algorithm/`, and
-`scenery-search/`.
+Both algorithms are implemented from scratch:
 
-## Why this version exists
+- **GAUSSSEARCH** — Chumbalov et al. (2020). Probit oracle, Gaussian
+  belief in embedding space.
+- **γ-CKLSearch** — Chumbalov et al. (2024), Algorithm 3. Scale-free
+  ratio oracle, discrete posterior over items.
 
-The main app needs a GPU to run the parser (Qwen 3B, 4-bit) and verbalizer
-(Qwen 1.5B). This one doesn't need any of that. Just Python + streamlit.
-Startup is instant.
+The images are pulled from the public HuggingFace dataset
+`Nightshade2304/scenery-search-images` on first run (~40 MB, cached
+under `~/.cache/huggingface/`).
 
-## Flow
+## Modes
 
-- **home** — start search
-- **search** — pair of images with three buttons per pair: Pick A, Pick B,
-  or Skip (neither is close). Click **Found it!** under whichever image
-  matches what you had in mind.
-- **result** — what you found + full query history
-
-The search stops automatically when the target you were looking for appears
-in the query pair.
+- **Human search** — you pick A, B, or Skip, or click *Found it!* when
+  you spot the image you had in mind.
+- **Auto-run** — a simulated user answers via the selected algorithm's
+  oracle so you can watch the search converge. Play / Pause / Step
+  controls with Slow / Normal / Fast speed. The picked image is
+  highlighted with a green border; the target sits on the right with a
+  red border.
 
 ## Layout
 
@@ -33,72 +34,46 @@ comparison-search-app-lite/
 ├── run_app.py
 └── app/
     ├── __init__.py
-    ├── config.py           # paths, sigma_eps, Drive link
-    ├── embeddings.py       # loads scenery_embedding.npz
-    ├── search_engine.py    # GAUSSSEARCH — one step at a time
-    └── streamlit_app.py    # the UI
+    ├── config.py             # paths, sigma_eps, gamma, HF link
+    ├── embeddings.py         # loads scenery_embedding.npz
+    ├── search_engine.py      # GAUSSSEARCH engine
+    ├── gamma_ckl_engine.py   # γ-CKL engine
+    └── streamlit_app.py      # the UI
 ```
 
 ## Setup
-
-Requires Python 3.10 or newer.
-
-### 1. Clone the repo and go into the lite app folder
-
-```
-git clone https://github.com/Shlok-Shetty/Dual-Degree-Project.git
-cd Dual-Degree-Project/comparison-search-llm/comparison-search-app-lite
-```
-
-### 2. Create and activate a virtual environment
-
-**Windows (cmd):**
-```
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-**Windows (PowerShell):**
-```
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-```
-
-**macOS / Linux:**
-```
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-**Or with conda:**
-```
-conda create -n comparison-search-lite python=3.11 -y
-conda activate comparison-search-lite
-```
-
-### 3. Install requirements
 
 ```
 pip install -r requirements.txt
 ```
 
-Only four packages: streamlit, numpy, scipy, pillow. No torch, no CUDA.
-Install takes ~30 seconds.
+No torch, no transformers, no CUDA. Runs on any machine.
 
-### 4. Run
+## Run
 
 ```
 streamlit run run_app.py
 ```
 
-Opens in your browser at `http://localhost:8501`. First load is instant —
-no model loading.
+First launch downloads the scenery images from HuggingFace (a couple of
+minutes), instant thereafter. The app opens in your browser.
+
+## Config
+
+`app/config.py`:
+
+- `SIGMA_EPS = 0.05` — probit noise for GAUSSSEARCH.
+- `GAMMA = 5.0` — oracle sharpness for γ-CKL. Higher = more
+  deterministic oracle (closer item almost always picked); lower =
+  noisier. γ=5 was the best-performing setting on the scenery
+  embeddings.
+- `DRIVE_GALLERY_URL` — HuggingFace dataset page for browsing the full
+  gallery.
 
 ## Notes
 
-- `sigma_eps` is fixed at 0.05, same as the main app.
 - Uses the same scenery data as the main app — expects
-  `scenery-search/data/scenery_embedding.npz` and `intel_images/` to be
-  present in the sibling folder.
-- Skip button applies no belief update but consumes a step, so the search
-  advances to a fresh pair.
+  `scenery_embedding.npz` next to it in `scenery-search/data/`.
+- Skip button applies no belief update but consumes a step so the
+  search advances to a fresh pair. Available in human mode for both
+  algorithms.
