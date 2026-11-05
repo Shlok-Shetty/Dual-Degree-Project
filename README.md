@@ -31,7 +31,7 @@ For the individual pieces, each subfolder is a set of Jupyter notebooks you can 
 
 If you want to understand how the project came together, work through it in this order:
 
-1. `comparison-search-llm/parser/notebooks/` — start with `01_smoke_test.ipynb`, then `02_baseline.ipynb`, `03_synth_gen.ipynb`, and the two training notebooks. This is the LLM side.
+1. `comparison-search-llm/parser/notebooks/` — run `01` to `11` in order: smoke test, 1.5B prompted baseline, synthetic data + split (`train_v1.jsonl`), 1.5B and 3B v1 training, 3B prompted baseline, adversarial set + v2 retrain (`train_v2.jsonl`), v2 eval + inference prompt, confirmation data v3 (`train_v3.jsonl`), model-size comparison, verbalizer audit. This is the LLM side.
 2. `comparison-search-llm/search-algorithm/notebooks/01_gauss_search.ipynb` — the from-scratch algorithm with all the validation experiments.
 3. `comparison-search-llm/scenery-search/notebooks/` — `01_scenery_setup.ipynb` (CLIP embeddings), then `03_gauss_search_3d_viz.ipynb` (real-data search + animations).
 4. `comparison-search-llm/comparison-search-app/` — the app that ties it all together.
