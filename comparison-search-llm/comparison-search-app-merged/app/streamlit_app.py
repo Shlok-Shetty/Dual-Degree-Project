@@ -12,21 +12,42 @@ Screen flow:
     llm_search     -> 3-panel view + step controls, single-pass render
     llm_result     -> completion + fidelity stats + history + New / Home
 """
+import base64
+import io
 import time
 import numpy as np
 import streamlit as st
+from PIL import Image, ImageOps
 
 from . import config
+from .answers import parsed_to_y
 from .embeddings import Embeddings
 from .search_engine import SearchEngine
 from .gamma_ckl_engine import GammaCKLEngine
-from .parser_llm import ParserLLM, parsed_to_y
 
 
 IMG_WIDTH_HUMAN = 340
 IMG_WIDTH_LLM = 280
 IMG_WIDTH_HISTORY = 180
 HUMAN_MAX_QUERIES = 50
+HUMAN_FEEDBACK_S = 1.0
+HUMAN_FEEDBACK_SKIP_S = 1.8
+
+# status from parsed_to_y -> (A highlight, B highlight, message, st alert kind).
+# "clean" highlights are filled in from y at runtime. Everything except "clean"
+# is a skip in the engines: both items are marked used, the belief is not
+# updated, and the next pair is drawn from the same belief.
+HUMAN_FEEDBACK = {
+    "clean":      (None, None, "", "success"),
+    "both":       ("chosen", "chosen",
+                   "parser read **both** - no belief update, showing a new pair", "info"),
+    "reject_all": ("rejected", "rejected",
+                   "parser read **neither** - no belief update, showing a new pair", "info"),
+    "uncertain":  (None, None,
+                   "parser read **unsure** - no belief update, showing a new pair", "info"),
+    "malformed":  (None, None,
+                   "could not read that answer - no update, showing a new pair", "warning"),
+}
 LLM_AUTORUN_PAUSE_S = 2.5
 
 ALGO_OPTIONS = [config.ALGO_GAUSS, config.ALGO_GCKL]
@@ -70,7 +91,8 @@ def load_embeddings() -> Embeddings:
 
 
 @st.cache_resource(show_spinner=False)
-def load_parser() -> ParserLLM:
+def load_parser():
+    from .parser_llm import ParserLLM
     return ParserLLM()
 
 
@@ -80,52 +102,28 @@ def load_verbalizer():
     return VerbalizerLLM()
 
 
+def backend_label() -> str:
+    from .devices import describe, pick_device
+    return describe(pick_device())
+
+
 def ensure_parser_loaded():
     if st.session_state.get("_parser_loaded"):
         return load_parser()
-
-    info_holder = st.empty()
-    bar_holder = st.empty()
-    info_holder.info("Loading parser - first time takes ~60 seconds while the model downloads and quantizes.")
-    bar = bar_holder.progress(0, text="Starting up...")
-
-    import threading
-    parser_ref: dict = {}
-
-    def _load():
-        parser_ref["p"] = load_parser()
-
-    t = threading.Thread(target=_load)
-    t.start()
-
-    stages = [
-        (10, "Loading tokenizer..."),
-        (25, "Downloading base model (Qwen 2.5-3B)..."),
-        (55, "Applying 4-bit quantization..."),
-        (75, "Attaching LoRA adapter..."),
-        (90, "Warming up..."),
-    ]
-    idx = 0
-    while t.is_alive():
-        if idx < len(stages):
-            pct, msg = stages[idx]
-            bar.progress(pct, text=msg)
-            idx += 1
-        time.sleep(3)
-    t.join()
-    bar.progress(100, text="Ready.")
-    time.sleep(0.3)
-    bar_holder.empty()
-    info_holder.empty()
-
+    with st.spinner(
+        f"Loading parser (Qwen 2.5-3B + LoRA{', 4-bit' if backend_label() == 'CUDA GPU' else ''}) "
+        f"on {backend_label()}. "
+        "The first run downloads the model and can take a few minutes."
+    ):
+        p = load_parser()
     st.session_state._parser_loaded = True
-    return parser_ref["p"]
+    return p
 
 
 def ensure_verbalizer_loaded():
     if st.session_state.get("_verbalizer_loaded"):
         return load_verbalizer()
-    with st.spinner("Loading verbalizer LLM (Qwen 1.5B, ~15s)..."):
+    with st.spinner(f"Loading verbalizer LLM (Qwen 1.5B) on {backend_label()}..."):
         v = load_verbalizer()
     st.session_state._verbalizer_loaded = True
     return v
@@ -207,27 +205,43 @@ def engine_pill(engine) -> str:
 # Image renderer
 # ==================================================================
 
+BORDERS = {
+    "chosen":   (4, "#27ae60"),
+    "rejected": (2, "#7f8c8d"),
+    "target":   (4, "#e74c3c"),
+    None:       (1, "#333333"),
+}
+
+
+@st.cache_data(show_spinner=False, max_entries=4000)
+def render_image(path_str: str, width: int, highlight: str | None) -> str:
+    """Draw the border into the pixels (Streamlit cannot wrap st.image in an
+    HTML div), resizing once to the final width so nothing is resampled again.
+    Returns an <img> tag with the JPEG inlined as base64, so all images of a
+    step arrive in the same update (no separate /media fetches landing at
+    different times) and an unchanged image keeps identical HTML."""
+    image = Image.open(path_str).convert("RGB")
+    border, color = BORDERS.get(highlight, BORDERS[None])
+    inner = width - 2 * border
+    h = int(round(image.height * inner / image.width))
+    image = image.resize((inner, h), Image.Resampling.LANCZOS)
+    image = ImageOps.expand(image, border=border, fill=color)
+    buf = io.BytesIO()
+    image.save(buf, format="JPEG", quality=92)
+    b64 = base64.b64encode(buf.getvalue()).decode("ascii")
+    return (
+        f'<img src="data:image/jpeg;base64,{b64}" width="{image.width}" '
+        f'height="{image.height}" style="width:100%; max-width:{image.width}px; '
+        f'height:auto; display:block; border-radius:0.5rem;">'
+    )
+
+
 def show_image(idx: int, emb: Embeddings, caption: str, *,
                 highlight: str | None = None, width: int | None = None):
-    border_map = {
-        "chosen":   "4px solid #27ae60",
-        "rejected": "2px solid #7f8c8d",
-        "target":   "4px solid #e74c3c",
-        None:       "1px solid #333",
-    }
-    border = border_map[highlight]
     path = emb.image_path(idx)
+    w = width if width is not None else IMG_WIDTH_HUMAN
     if path.exists():
-        st.markdown(
-            f'<div style="border:{border}; padding:6px; border-radius:6px; '
-            f'display:inline-block;">',
-            unsafe_allow_html=True,
-        )
-        if width is not None:
-            st.image(str(path), width=width)
-        else:
-            st.image(str(path), use_container_width=True)
-        st.markdown("</div>", unsafe_allow_html=True)
+        st.markdown(render_image(str(path), w, highlight), unsafe_allow_html=True)
     else:
         st.warning(f"image missing: {path}")
     if caption:
@@ -446,7 +460,9 @@ def screen_human_search(emb: Embeddings):
 
     _, col_a, col_b, _ = st.columns([1, 3, 3, 1])
     with col_a:
-        show_image(i, emb, "A (left)", width=IMG_WIDTH_HUMAN)
+        img_a = st.empty()
+        with img_a.container():
+            show_image(i, emb, "A (left)", width=IMG_WIDTH_HUMAN)
         if st.button("Found it! - this is A", key=f"found_a_{engine.step}",
                       use_container_width=True):
             engine.stop_manual("user_found_target")
@@ -457,7 +473,9 @@ def screen_human_search(emb: Embeddings):
             })
             go("human_result")
     with col_b:
-        show_image(j, emb, "B (right)", width=IMG_WIDTH_HUMAN)
+        img_b = st.empty()
+        with img_b.container():
+            show_image(j, emb, "B (right)", width=IMG_WIDTH_HUMAN)
         if st.button("Found it! - this is B", key=f"found_b_{engine.step}",
                       use_container_width=True):
             engine.stop_manual("user_found_target")
@@ -468,7 +486,7 @@ def screen_human_search(emb: Embeddings):
             })
             go("human_result")
 
-    st.markdown("")
+    feedback_holder = st.empty()
     with st.form(key=f"utt_form_{engine.step}", clear_on_submit=True):
         utt = st.text_input(
             "Which is closer to what you're looking for?",
@@ -485,15 +503,61 @@ def screen_human_search(emb: Embeddings):
         )
         record["raw_parser_output"] = raw
         st.session_state.history.append(record)
+
+        # Flash what the parser understood on the same pair before moving on.
+        a_hl, b_hl, msg, kind = HUMAN_FEEDBACK.get(status, HUMAN_FEEDBACK["malformed"])
+        show = getattr(feedback_holder, kind)
+        if status == "clean":
+            a_hl, b_hl = ("chosen", "rejected") if y == 0 else ("rejected", "chosen")
+            msg = f"parser read **{'A' if y == 0 else 'B'}**"
+        with img_a.container():
+            show_image(i, emb, "A (left)", highlight=a_hl, width=IMG_WIDTH_HUMAN)
+        with img_b.container():
+            show_image(j, emb, "B (right)", highlight=b_hl, width=IMG_WIDTH_HUMAN)
+        show(f"{msg}  -  you said: _{utt}_")
+        time.sleep(HUMAN_FEEDBACK_S if status == "clean" else HUMAN_FEEDBACK_SKIP_S)
         st.rerun()
 
     render_inline_history(emb)
+
+
+def start_new_human_search(emb: Embeddings):
+    for k in ("engine", "history", "found_idx"):
+        st.session_state.pop(k, None)
+    st.session_state.engine = new_engine(
+        emb, target_idx=None, max_queries=HUMAN_MAX_QUERIES,
+    )
+    st.session_state.history = []
+    st.session_state.mode = "human"
+    go("human_search")
+
+
+def start_new_simulation(emb: Embeddings):
+    for k in ("engine", "target_idx", "history", "auto_run",
+              "force_step", "rng_lang", "llm_sigma_eps", "llm_gamma"):
+        st.session_state.pop(k, None)
+    go("llm_setup")
+
+
+def result_top_bar(emb: Embeddings, new_label: str, start_new, key: str):
+    """Home (left) and new-run (right) at the top of a results page, so you
+    don't have to scroll past the history to reach them."""
+    left, _, right = st.columns([1, 3.5, 1.5])
+    with left:
+        if st.button("Home", key=f"{key}_home_top", use_container_width=True):
+            reset_all()
+            go("home")
+    with right:
+        if st.button(new_label, key=f"{key}_new_top", type="primary",
+                     use_container_width=True):
+            start_new(emb)
 
 
 def screen_human_result(emb: Embeddings):
     engine = st.session_state.engine
     found_idx = st.session_state.get("found_idx")
 
+    result_top_bar(emb, "New search", start_new_human_search, "human_result")
     st.title("Search complete")
     st.caption(algo_subtitle(engine))
     st.markdown(engine_pill(engine), unsafe_allow_html=True)
@@ -528,14 +592,7 @@ def screen_human_result(emb: Embeddings):
 
     col1, col2 = st.columns(2)
     if col1.button("New search", type="primary", use_container_width=True):
-        for k in ("engine", "history", "found_idx"):
-            st.session_state.pop(k, None)
-        st.session_state.engine = new_engine(
-            emb, target_idx=None, max_queries=HUMAN_MAX_QUERIES,
-        )
-        st.session_state.history = []
-        st.session_state.mode = "human"
-        go("human_search")
+        start_new_human_search(emb)
     if col2.button("Home", use_container_width=True):
         reset_all()
         go("home")
@@ -636,22 +693,24 @@ def screen_llm_search(emb: Embeddings):
             reset_all()
             go("home")
     with top[1]:
-        st.markdown(f"#### Step {engine.step + 1}")
+        header_holder = st.empty()
+        header_holder.markdown(f"#### Step {engine.step + 1}")
     with top[2]:
         if st.button("End search", key="llm_end"):
-            engine.stop_manual("user_stopped")
+            if not engine.done:
+                engine.stop_manual("user_stopped")
             go("llm_result")
 
     # Prominent algo indicator so you can see at a glance which engine is live.
     st.caption(algo_subtitle(engine))
     st.markdown(engine_pill(engine), unsafe_allow_html=True)
 
-    _render_belief_stats(engine, emb)
+    # Refreshed after this run's step so the numbers match the images below.
+    stats_holder = st.empty()
+    with stats_holder.container():
+        _render_belief_stats(engine, emb)
 
     st.markdown("---")
-
-    if engine.done:
-        go("llm_result")
 
     if "rng_lang" not in st.session_state:
         st.session_state.rng_lang = np.random.default_rng(
@@ -661,8 +720,25 @@ def screen_llm_search(emb: Embeddings):
 
     should_step = st.session_state.get("force_step") or st.session_state.get("auto_run")
 
+    def last_record():
+        return next(
+            (r for r in reversed(st.session_state.get("history", []))
+             if "i" in r and "y_true" in r),
+            None,
+        )
+
+    def draw_panels(rec):
+        with panels_holder.container():
+            if rec is not None:
+                _render_llm_panels(rec, emb)
+            else:
+                st.info("Press **Next step** to begin.")
+
     panels_holder = st.empty()
     info_holder = st.empty()
+
+    # Keep the previous step on screen while the models work on the next one.
+    draw_panels(last_record())
 
     if should_step and not engine.done:
         st.session_state.pop("force_step", None)
@@ -671,8 +747,11 @@ def screen_llm_search(emb: Embeddings):
         picked = "A" if y_true == 0 else "B"
         info_holder.info("verbalizer generating...")
         utt, style = verbalizer.verbalize(picked, rng_lang, parser=parser)
-        info_holder.info("parser...")
-        parsed, raw = parser.parse(utt, options=("A", "B"))
+        if verbalizer.last_parse is not None:
+            parsed, raw = verbalizer.last_parse
+        else:
+            info_holder.info("parser...")
+            parsed, raw = parser.parse(utt, options=("A", "B"))
         info_holder.empty()
         y_rec, status = parsed_to_y(parsed, options=("A", "B"))
         record = engine.apply_answer(
@@ -682,17 +761,23 @@ def screen_llm_search(emb: Embeddings):
         record["picked_letter"] = picked
         record["raw_parser_output"] = raw
         st.session_state.history.append(record)
-
-    last = next(
-        (r for r in reversed(st.session_state.get("history", []))
-         if "i" in r and "y_true" in r),
-        None,
-    )
-    with panels_holder.container():
-        if last is not None:
-            _render_llm_panels(last, emb)
+        draw_panels(record)
+        with stats_holder.container():
+            _render_belief_stats(engine, emb)
+        if engine.done:
+            header_holder.markdown(f"#### Finished after {engine.step} steps")
         else:
-            st.info("Press **Next step** to begin.")
+            header_holder.markdown(f"#### Step {engine.step + 1}")
+
+    if engine.done:
+        st.markdown("---")
+        if st.button("See results", type="primary", use_container_width=True,
+                     key="llm_see_results"):
+            go("llm_result")
+        if st.session_state.get("auto_run"):
+            time.sleep(LLM_AUTORUN_PAUSE_S)
+            go("llm_result")
+        return
 
     if not engine.done:
         st.markdown("---")
@@ -750,6 +835,7 @@ def screen_llm_result(emb: Embeddings):
     engine = st.session_state.engine
     target_idx = st.session_state.target_idx
 
+    result_top_bar(emb, "New simulation", start_new_simulation, "llm_result")
     st.title("Simulation complete")
     st.caption(algo_subtitle(engine))
     st.markdown(engine_pill(engine), unsafe_allow_html=True)
@@ -781,10 +867,7 @@ def screen_llm_result(emb: Embeddings):
 
     col1, col2 = st.columns(2)
     if col1.button("New simulation", type="primary", use_container_width=True):
-        for k in ("engine", "target_idx", "history", "auto_run",
-                  "force_step", "rng_lang", "llm_sigma_eps", "llm_gamma"):
-            st.session_state.pop(k, None)
-        go("llm_setup")
+        start_new_simulation(emb)
     if col2.button("Home", use_container_width=True):
         reset_all()
         go("home")

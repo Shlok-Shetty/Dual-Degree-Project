@@ -7,12 +7,15 @@ the picked letter from the utterance. Falls back to a bare letter if all
 retries flip. This exists because the 1.5B verbalizer occasionally flips
 options on 'ordinal' style (e.g. says "the second one" when the user picked A)
 - see the flip-source decomposition in the closed-loop eval notebook.
+
+Backends (see devices.py): fp16 on CUDA and Apple MPS, bf16 on CPU.
 """
 import numpy as np
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from . import config
+from .devices import pick_device, verbalizer_dtype
 
 
 MAX_RETRIES = 3
@@ -20,14 +23,23 @@ MAX_RETRIES = 3
 
 class VerbalizerLLM:
     def __init__(self, model_id: str = config.VERBALIZER_MODEL):
+        self.device = pick_device()
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
         if self.tokenizer.pad_token is None:
             self.tokenizer.pad_token = self.tokenizer.eos_token
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_id, torch_dtype=torch.float16, device_map="cuda",
-        )
+        if self.device == "cuda":
+            self.model = AutoModelForCausalLM.from_pretrained(
+                model_id, dtype=torch.float16, device_map="cuda",
+            )
+        else:
+            self.model = AutoModelForCausalLM.from_pretrained(
+                model_id, dtype=verbalizer_dtype(self.device),
+            ).to(self.device)
         self.model.eval()
         self.styles = config.VERBALIZER_STYLES
+        # (parsed, raw) from the gate's parse of the returned utterance, or
+        # None if no parse was done (no parser given, or bare-letter fallback).
+        self.last_parse = None
 
     def _generate_one(self, picked_letter: str, style_instruction: str, seed: int) -> str:
         other = "B" if picked_letter == "A" else "A"
@@ -42,7 +54,7 @@ class VerbalizerLLM:
         ]
         inputs = self.tokenizer.apply_chat_template(
             messages, add_generation_prompt=True, return_tensors="pt", return_dict=True,
-        ).to("cuda")
+        ).to(self.device)
         torch.manual_seed(seed)
         with torch.no_grad():
             out = self.model.generate(
@@ -65,7 +77,11 @@ class VerbalizerLLM:
         with different seeds. If all retries flip, falls back to a bare letter
         (deterministic). The style_name returned is "letter (fallback)" in
         that case so downstream can log the fallback happened.
+
+        After a call, `self.last_parse` holds the gate's (parsed, raw) for the
+        returned utterance so callers do not need to parse it again.
         """
+        self.last_parse = None
         style_name, style_instruction = self.styles[rng.integers(0, len(self.styles))]
 
         if parser is None:
@@ -75,8 +91,9 @@ class VerbalizerLLM:
         for _ in range(MAX_RETRIES):
             seed = int(rng.integers(0, 1_000_000))
             utterance = self._generate_one(picked_letter, style_instruction, seed)
-            parsed, _ = parser.parse(utterance, options=("A", "B"))
+            parsed, raw = parser.parse(utterance, options=("A", "B"))
             if isinstance(parsed, list) and parsed == [picked_letter]:
+                self.last_parse = (parsed, raw)
                 return utterance, style_name
 
         return picked_letter, "letter (fallback)"

@@ -54,12 +54,23 @@ comparison-search-app-merged/
 
 ## Setup
 
-**Hardware requirement:** an NVIDIA GPU with CUDA. `parser_llm.py` and
-`verbalizer_llm.py` currently load the models with `device_map="cuda"` and
-4-bit `bitsandbytes`, so the app does not run on CPU-only machines or Macs
-yet. VRAM: about 2.2 GB for human mode (parser only), about 5.3 GB for LLM
-simulation (parser + verbalizer). For a CPU-only demo of the search
-algorithms, use `comparison-search-app-lite` instead.
+**Hardware.** The app picks a backend automatically (`app/devices.py`):
+
+| Backend | Parser (Qwen 3B + LoRA) | Verbalizer (Qwen 1.5B) | Memory |
+|---|---|---|---|
+| NVIDIA GPU (CUDA) | 4-bit NF4, adapter separate | fp16 | ~2.2 GB VRAM human mode, ~5.3 GB LLM mode |
+| Apple Silicon (MPS) | fp16, adapter merged | fp16 | ~9 GB unified memory for both |
+| CPU only | bf16, adapter merged | bf16 | ~9 GB RAM for both; ~3 s per parse |
+
+Force one with `COMPARISON_SEARCH_DEVICE=cuda|mps|cpu`. On MPS/CPU the
+parser reuses the cached system-prompt KV between calls.
+
+The parser adapter was trained on the 4-bit base, so on MPS/CPU it answers a
+few hard cases differently: on the 210-example parser test set it scores
+204/210 in fp16 versus 207/210 in 4-bit, mostly on ordinal negations such as
+"the third one is off". Of 28 two-option app-style cases, only "yes" and
+"bingo" differ, and both backends get those wrong. For a quick demo of the search algorithms alone, use
+`comparison-search-app-lite`, which needs no LLMs.
 
 Tested with: Python 3.12, torch 2.11.0+cu128, transformers 5.12.1,
 peft 0.19.1, accelerate 1.14.0, bitsandbytes 0.49.2, streamlit 1.61.1
@@ -83,6 +94,9 @@ pip install torch --index-url https://download.pytorch.org/whl/cu121
 
 # CUDA 11.8 (older GPUs)
 pip install torch --index-url https://download.pytorch.org/whl/cu118
+
+# macOS (Apple Silicon, uses MPS) or CPU-only
+pip install torch
 ```
 
 If unsure which CUDA you have, run `nvidia-smi` — the top-right corner shows
