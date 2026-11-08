@@ -1,10 +1,10 @@
 """Streamlit entry point.
 
 Run from the folder containing this file:
-    streamlit run comparison-search-app/run_app.py
+    streamlit run comparison-search-app-merged/run_app.py
 
 Or with an absolute path from anywhere:
-    streamlit run C:\\Users\\shlok\\projects\\ddp-llm\\comparison-search-app\\run_app.py
+    streamlit run C:\\Users\\shlok\\projects\\ddp-llm\\comparison-search-app-merged\\run_app.py
 """
 import sys
 from pathlib import Path

@@ -1,4 +1,4 @@
-# comparison-search-app
+# comparison-search-app-merged
 
 Streamlit interface tying together the parser (Qwen 3B + LoRA), both search
 engines (GAUSSSEARCH and γ-CKLSearch), and the scenery embeddings.
@@ -36,7 +36,7 @@ work identically for either.
 ## Layout
 
 ```
-comparison-search-app/
+comparison-search-app-merged/
 ├── README.md
 ├── requirements.txt
 ├── run_app.py
@@ -53,6 +53,17 @@ comparison-search-app/
 ```
 
 ## Setup
+
+**Hardware requirement:** an NVIDIA GPU with CUDA. `parser_llm.py` and
+`verbalizer_llm.py` currently load the models with `device_map="cuda"` and
+4-bit `bitsandbytes`, so the app does not run on CPU-only machines or Macs
+yet. VRAM: about 2.2 GB for human mode (parser only), about 5.3 GB for LLM
+simulation (parser + verbalizer). For a CPU-only demo of the search
+algorithms, use `comparison-search-app-lite` instead.
+
+Tested with: Python 3.12, torch 2.11.0+cu128, transformers 5.12.1,
+peft 0.19.1, accelerate 1.14.0, bitsandbytes 0.49.2, streamlit 1.61.1
+(Windows 11, RTX 5060 Laptop).
 
 ### 1. Install torch (per your platform)
 
@@ -72,9 +83,6 @@ pip install torch --index-url https://download.pytorch.org/whl/cu121
 
 # CUDA 11.8 (older GPUs)
 pip install torch --index-url https://download.pytorch.org/whl/cu118
-
-# CPU-only (no GPU, LLM modes will be very slow but will run)
-pip install torch --index-url https://download.pytorch.org/whl/cpu
 ```
 
 If unsure which CUDA you have, run `nvidia-smi` — the top-right corner shows

@@ -1,13 +1,13 @@
-# comparison-search-app requirements
+# comparison-search-app-merged requirements
 #
 # NOTE: install torch BEFORE this file. See README.md for the torch install
-# command for your platform (CPU, CUDA 11.8, 12.1, 12.4, 12.8). Keeping torch
+# command for your platform (CUDA 11.8, 12.1, 12.4, 12.8). Keeping torch
 # out of this file is deliberate — pinning a specific build here breaks the
 # install on any other GPU / CUDA version. Pip will NOT upgrade/downgrade
 # an already-installed torch.
 
-# Hugging Face stack
-transformers>=4.40,<5.0
+# Hugging Face stack (tested with transformers 5.12.1, peft 0.19.1)
+transformers>=4.40
 peft>=0.10
 accelerate>=0.30
 huggingface_hub>=0.20
